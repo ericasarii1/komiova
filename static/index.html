@@ -134,21 +134,22 @@ async function openDetail(id){
         <img src="${c.cover}">
         <div class="detail-info">
           <h1>${esc(c.title)}</h1>
-          <div class="meta">✍ ${esc(c.author)} · 📡 ${esc(c.status)} · 📖 ${CHAP.length} chapter (${(c.chapter_lang||"en").toUpperCase()})</div>
+          <div class="meta">✍ ${esc(c.author)} · 📡 ${esc(c.status)} · 📖 ${CHAP.length} chapter</div>
           <div class="tags">${(c.tags||[]).slice(0,6).map(g=>`<span class="tag">${esc(g)}</span>`).join("")}</div>
           <p class="desc">${esc(c.desc)}</p>
         </div>
       </div>
       <div class="ch-list"><h2 class="section">Daftar Chapter (${CHAP.length})</h2>
       ${CHAP.length?`<div class="ch-bar">
-        <button class="read" onclick="openReader(0)">▶ Mulai dari Awal</button>
+        <button class="read" onclick="openReader(0)">▶ Dari Ch. 1</button>
+        <button class="read" style="background:#3a7bd5" onclick="openReader(CHAP.length-1)">⏭ Chapter Terbaru</button>
         <select onchange="openReader(parseInt(this.value))">
           <option value="">⬇ Lompat ke chapter…</option>
           ${CHAP.map((ch,i)=>`<option value="${i}">Ch. ${esc(ch.num)} — ${esc(ch.title).slice(0,50)}</option>`).join("")}
         </select>
       </div>
       <div class="ch-scroll">
-      ${CHAP.map((ch,i)=>`<div class="ch-item" onclick="openReader(${i})"><span class="nm">Ch. ${esc(ch.num)} — ${esc(ch.title)}</span><span class="meta">${ch.pages_count} hal</span></div>`).join("")}
+      ${CHAP.map((ch,i)=>`<div class="ch-item" onclick="openReader(${i})"><span class="nm">Ch. ${esc(ch.num)} — ${esc(ch.title)}</span><span class="meta">${ch.lang==="id"?"🇮🇩":"🇬🇧"} ${ch.pages_count} hal</span></div>`).join("")}
       </div>`:'<div class="loading">Belum ada chapter yang tersedia 😌</div>'}
       </div>`;
   }catch(e){d.innerHTML='<button class="back" onclick="goHome()">← Kembali</button><div class="loading">Gagal memuat detail</div>';}

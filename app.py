@@ -59,13 +59,15 @@ def parse_manga(m, cover_art=None):
 @app.route("/api/manga")
 def api_manga():
     q = request.args.get("q", "")
-    params = {
-        "limit": 24, "order[followedCount]": "desc",
-        "contentRating[]": ["safe", "suggestive"],
+    base = {
+        "limit": 24, "contentRating[]": ["safe", "suggestive"],
         "includes[]": ["cover_art", "author"],
+        "hasAvailableChapters": "true",
+        "availableTranslatedLanguage[]": ["id", "en"],
     }
+    params = {**base, "order[relevance]" if q else "order[followedCount]": "desc"}
     if q:
-        params = {"limit": 24, "title": q, "contentRating[]": ["safe", "suggestive"], "includes[]": ["cover_art", "author"], "order[relevance]": "desc"}
+        params["title"] = q
     data = md_get("/manga", params)
     return jsonify([parse_manga(m, None) for m in data.get("data", [])])
 
@@ -74,17 +76,11 @@ def api_manga_detail(mid):
     data = md_get(f"/manga/{mid}", {"includes[]": ["cover_art", "author"]})
     info = parse_manga(data["data"], None)
     # chapters: prefer Indonesian, fallback to English
-    def get_feed(lang):
-        return md_get("/manga/%s/feed" % mid, {
-            "translatedLanguage[]": [lang], "limit": 100, "order[chapter]": "desc",
-            "contentRating[]": ["safe", "suggestive"],
-            "includeExternalUrl": 0,
-        })
-    ch = get_feed("id")
+    ch = md_get("/manga/%s/feed" % mid, {
+        "translatedLanguage[]": ["id", "en"], "limit": 500, "order[chapter]": "asc",
+        "includeExternalUrl": 0,
+    })
     lang_used = "id"
-    if not ch.get("data"):
-        ch = get_feed("en")
-        lang_used = "en"
     chapters = []
     for c in ch.get("data", []):
         a = c["attributes"]
@@ -94,9 +90,15 @@ def api_manga_detail(mid):
             "num": a.get("chapter") or "0",
             "title": a.get("title") or "Chapter " + str(a.get("chapter") or ""),
             "pages_count": a.get("pages", 0),
+            "lang": a.get("translatedLanguage", "en"),
         })
-    info["chapter_lang"] = lang_used
-    info["chapters"] = chapters
+    info["chapter_lang"] = "id+en"
+    def _ch_key(c):
+        try:
+            return float(c["num"])
+        except (TypeError, ValueError):
+            return float("inf")
+    info["chapters"] = sorted(chapters, key=_ch_key)
     return jsonify(info)
 
 @app.route("/api/chapter/<cid>")
