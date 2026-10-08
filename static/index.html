@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>KomiOva — Baca Komik</title>
 <link rel="manifest" href="/static/manifest.json">
 <link rel="icon" type="image/png" href="/static/icon-192.png">
@@ -11,130 +11,325 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>
-:root{--bg:#0e0e1a;--card:#1a1a2e;--card2:#16162a;--accent:#ff6b35;--accent2:#ffd369;--text:#eaeaf2;--muted:#8a8aa3;--radius:14px}
+:root{--bg:#0e0e1a;--card:#1a1a2e;--card2:#16162a;--accent:#ff6b35;--accent2:#ffd369;--text:#eaeaf2;--muted:#8a8aa3;--radius:14px;--navh:62px}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}
-header{position:sticky;top:0;z-index:10;background:rgba(14,14,26,.92);backdrop-filter:blur(10px);border-bottom:1px solid #22223a;padding:14px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+body.light{--bg:#f4f4f8;--card:#ffffff;--card2:#ececf4;--text:#1a1a2e;--muted:#6a6a85}
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--muted) 18%,transparent);padding:14px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .logo{font-size:1.35rem;font-weight:800;letter-spacing:.5px;color:var(--accent)}
 .logo span{color:var(--accent2)}
-#search{flex:1;min-width:180px;max-width:420px;background:var(--card2);border:1px solid #2a2a44;color:var(--text);padding:10px 16px;border-radius:999px;font-size:.95rem;outline:none}
+#search{flex:1;min-width:180px;max-width:420px;background:var(--card2);border:1px solid color-mix(in srgb,var(--muted) 25%,transparent);color:var(--text);padding:10px 16px;border-radius:999px;font-size:.95rem;outline:none}
 #search:focus{border-color:var(--accent)}
-#tabs{display:flex;gap:8px;margin-left:auto}
-.tab{background:transparent;border:1px solid #2a2a44;color:var(--muted);padding:8px 16px;border-radius:999px;cursor:pointer;font-size:.9rem}
-.tab.active{background:var(--accent);border-color:var(--accent);color:#fff}
-main{max-width:1100px;margin:0 auto;padding:24px 18px 80px}
+main{max-width:1100px;margin:0 auto;padding:20px 16px calc(var(--navh) + 30px)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:18px}
-.comic{cursor:pointer;transition:transform .15s}
+@media(max-width:600px){.grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}}
+.comic{cursor:pointer;transition:transform .15s;position:relative}
 .comic:hover{transform:translateY(-4px)}
 .cover-wrap{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4;background:var(--card)}
 .cover-wrap img{width:100%;height:100%;object-fit:cover;display:block}
 .badge{position:absolute;bottom:8px;left:8px;color:#fff;font-size:.68rem;font-weight:700;padding:3px 8px;border-radius:6px;background:#5a5a7a}
-.badge.ongoing{background:#2e9e6b}.badge.completed{background:#3a7bd5}.badge.hiatus{background:#c9962e}.badge.cancelled{background:#b3453f}
+.badge.ongoing{background:#2e9e6b}.badge.completed{background:#3a7bd5}.badge.hiatus{background:#c9962e}
 .fav{position:absolute;top:6px;right:6px;background:rgba(0,0,0,.55);border:none;color:#fff;font-size:1.05rem;width:32px;height:32px;border-radius:50%;cursor:pointer;transition:transform .15s}
 .fav:hover{transform:scale(1.15)}
 .fav.on{color:var(--accent2)}
+.newdot{position:absolute;top:8px;left:8px;background:#e5484d;color:#fff;font-size:.65rem;font-weight:800;padding:3px 7px;border-radius:6px}
+.prog{position:absolute;bottom:0;left:0;height:4px;background:var(--accent)}
 .comic h3{font-size:.92rem;margin-top:8px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .comic p{font-size:.75rem;color:var(--muted);margin-top:2px}
-h2.section{margin:8px 0 16px;font-size:1.15rem}
-.empty,.loading{color:var(--muted);text-align:center;padding:60px 0}
+h2.section{margin:6px 0 14px;font-size:1.15rem}
+.empty,.loading{color:var(--muted);text-align:center;padding:60px 20px}
+/* bottom nav (Komikku style) */
+nav#bottom{position:fixed;bottom:0;left:0;right:0;height:var(--navh);background:color-mix(in srgb,var(--bg) 96%,transparent);backdrop-filter:blur(12px);border-top:1px solid color-mix(in srgb,var(--muted) 18%,transparent);display:flex;z-index:40;padding-bottom:env(safe-area-inset-bottom)}
+nav#bottom button{flex:1;background:none;border:none;color:var(--muted);font-size:.62rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;font-family:inherit}
+nav#bottom button .ic{font-size:1.25rem;line-height:1}
+nav#bottom button.active{color:var(--accent)}
+nav#bottom button .cnt{position:absolute;margin-left:26px;margin-top:-2px;background:#e5484d;color:#fff;font-size:.58rem;font-weight:800;min-width:16px;height:16px;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:0 4px}
+nav#bottom button{position:relative}
+/* list rows (history/updates/downloads) */
+.row{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid color-mix(in srgb,var(--muted) 14%,transparent);padding:10px 12px;border-radius:12px;margin-bottom:10px;cursor:pointer}
+.row img{width:52px;height:70px;border-radius:8px;object-fit:cover;background:var(--card2);flex-shrink:0}
+.row .inf{flex:1;min-width:0}
+.row .inf .t{font-size:.9rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .inf .s{font-size:.75rem;color:var(--muted);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .act{background:none;border:1px solid var(--accent);color:var(--accent);border-radius:999px;padding:7px 14px;font-size:.75rem;font-weight:700;cursor:pointer;flex-shrink:0}
+.row .act.solid{background:var(--accent);color:#fff}
+/* detail */
 #detail{display:none;max-width:800px;margin:0 auto}
-#detail .back{background:none;border:1px solid #2a2a44;color:var(--muted);padding:8px 18px;border-radius:999px;cursor:pointer;margin-bottom:16px;font-size:.9rem}
+#detail .back{background:none;border:1px solid color-mix(in srgb,var(--muted) 25%,transparent);color:var(--muted);padding:8px 18px;border-radius:999px;cursor:pointer;margin-bottom:16px;font-size:.9rem}
 #detail .back:hover{color:var(--text);border-color:var(--accent)}
 .detail-head{display:flex;gap:20px;flex-wrap:wrap}
 .detail-head img{width:210px;border-radius:var(--radius);aspect-ratio:3/4;object-fit:cover;background:var(--card)}
+@media(max-width:600px){.detail-head img{width:140px}}
 .detail-info{flex:1;min-width:220px}
-.detail-info h1{font-size:1.5rem;margin-bottom:6px}
+.detail-info h1{font-size:1.4rem;margin-bottom:6px}
 .meta{color:var(--muted);font-size:.85rem;margin-bottom:4px}
 .tags{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
-.tag{background:var(--card2);border:1px solid #2a2a44;font-size:.72rem;padding:4px 10px;border-radius:999px;color:var(--accent2)}
-.desc{color:#c5c5d6;font-size:.9rem;line-height:1.6;margin:10px 0 16px}
+.tag{background:var(--card2);border:1px solid color-mix(in srgb,var(--muted) 20%,transparent);font-size:.72rem;padding:4px 10px;border-radius:999px;color:var(--accent2)}
+.desc{color:var(--text);opacity:.8;font-size:.9rem;line-height:1.6;margin:10px 0 16px}
 .ch-list{margin-top:22px}
 .ch-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
-.ch-bar select{background:var(--card2);border:1px solid #2a2a44;color:var(--text);padding:9px 14px;border-radius:999px;font-size:.85rem;outline:none;max-width:100%}
-.ch-bar .read{background:var(--accent);border:none;color:#fff;padding:9px 20px;border-radius:999px;cursor:pointer;font-weight:600;font-size:.85rem}
+.ch-bar button,.ch-bar select{background:var(--card2);border:1px solid color-mix(in srgb,var(--muted) 22%,transparent);color:var(--text);padding:9px 14px;border-radius:999px;font-size:.85rem;outline:none;max-width:100%}
+.ch-bar .read{background:var(--accent);border:none;color:#fff;cursor:pointer;font-weight:600}
+.ch-bar .read.blue{background:#3a7bd5}
 .ch-scroll{max-height:460px;overflow-y:auto;padding-right:4px}
-.ch-item{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--card);border:1px solid #23233c;padding:13px 16px;border-radius:10px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
+.ch-item{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--card);border:1px solid color-mix(in srgb,var(--muted) 14%,transparent);padding:12px 16px;border-radius:10px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
 .ch-item:hover{border-color:var(--accent)}
 .ch-item .nm{font-size:.9rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ch-item.readed{opacity:.45}
+.ch-item .dl{background:none;border:none;cursor:pointer;font-size:1rem}
+/* reader */
 #reader{display:none;position:fixed;inset:0;background:#0a0a12;z-index:50;overflow-y:auto;padding-bottom:40px}
-#reader-bar{position:sticky;top:0;background:rgba(10,10,18,.95);backdrop-filter:blur(8px);display:flex;align-items:center;gap:10px;padding:10px 14px;z-index:5;border-bottom:1px solid #1e1e34}
-#reader-bar .title{flex:1;font-weight:600;font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.light #reader{background:#e8e8ee}
+#reader-bar{position:sticky;top:0;background:rgba(10,10,18,.95);backdrop-filter:blur(8px);display:flex;align-items:center;gap:8px;padding:10px 12px;z-index:5;border-bottom:1px solid #1e1e34;color:#eaeaf2}
+body.light #reader-bar{background:rgba(240,240,246,.95);color:#1a1a2e;border-color:#d8d8e2}
+#reader-bar .title{flex:1;font-weight:600;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .nbtn{background:var(--accent);border:none;color:#fff;padding:8px 14px;border-radius:999px;cursor:pointer;font-weight:600;font-size:.82rem}
-.nbtn:disabled{background:#33334d;cursor:not-allowed}
-.xbtn{background:none;border:1px solid #2a2a44;color:#fff;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1.1rem}
-#pages img{display:block;max-width:760px;width:100%;margin:0 auto;min-height:200px;background:#12121e}
-footer{text-align:center;color:var(--muted);font-size:.78rem;padding:30px 0}
-@media(max-width:600px){.grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}.detail-head img{width:150px}#reader-bar .title{font-size:.8rem}.nbtn{padding:7px 10px;font-size:.75rem}}
+.nbtn:disabled{background:#55556d;cursor:not-allowed}
+.xbtn,.sbtn{background:none;border:1px solid #3a3a55;color:inherit;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1.05rem;flex-shrink:0}
+#pages img{display:block;max-width:760px;width:100%;margin:0 auto;min-height:120px;background:#12121e}
+body.light #pages img{background:#ddd}
+#pages.paged{display:flex;flex-direction:column;align-items:center;gap:8px}
+#pages.paged img{max-height:calc(100vh - 120px);width:auto;max-width:100%}
+#reader-settings{position:fixed;bottom:calc(var(--navh) + 10px);left:50%;transform:translateX(-50%);background:var(--card);border:1px solid color-mix(in srgb,var(--muted) 25%,transparent);border-radius:16px;padding:14px 18px;display:none;z-index:55;min-width:260px;box-shadow:0 8px 30px rgba(0,0,0,.5)}
+#reader-settings label{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:.85rem;margin:8px 0;cursor:pointer}
+footer{text-align:center;color:var(--muted);font-size:.78rem;padding:26px 0}
+.sw{display:none}
+@media(min-width:700px){.sw{display:grid}}
+/* toast */
+#toast{position:fixed;bottom:calc(var(--navh) + 16px);left:50%;transform:translateX(-50%) translateY(20px);background:#2a2a44;color:#fff;padding:11px 22px;border-radius:999px;font-size:.85rem;opacity:0;transition:all .25s;z-index:70;pointer-events:none}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 </style>
 </head>
 <body>
-<header>
+<header id="hdr">
   <div class="logo">Komi<span>Ova</span></div>
   <input id="search" placeholder="🔍 Cari judul komik...">
-  <div id="tabs">
-    <button class="tab active" data-f="all">Semua</button>
-    <button class="tab" data-f="fav">❤ Favorit</button>
-  </div>
 </header>
 <main>
-  <div id="home">
+  <div id="view-browse">
     <h2 class="section" id="sec-title">Komik Populer</h2>
     <div class="grid" id="grid"></div>
     <div class="loading" id="status-msg">Memuat komik…</div>
   </div>
+  <div id="view-library" style="display:none"></div>
+  <div id="view-history" style="display:none"></div>
+  <div id="view-updates" style="display:none"></div>
+  <div id="view-downloads" style="display:none"></div>
+  <div id="view-settings" style="display:none"></div>
   <div id="detail"></div>
 </main>
+
+<nav id="bottom">
+  <button data-v="browse" class="active"><span class="ic">🧭</span>Jelajah</button>
+  <button data-v="library"><span class="ic">📚</span>Library</button>
+  <button data-v="updates"><span class="ic">🔄</span>Update<span class="cnt" id="cnt-upd" style="display:none"></span></button>
+  <button data-v="history"><span class="ic">🕐</span>Riwayat</button>
+  <button data-v="downloads"><span class="ic">📥</span>Download</button>
+  <button data-v="settings"><span class="ic">⚙️</span>Setelan</button>
+</nav>
+
 <div id="reader">
   <div id="reader-bar">
     <button class="xbtn" id="close-reader">✕</button>
     <div class="title" id="r-title"></div>
     <span class="meta" id="r-pages"></span>
-    <button class="nbtn" id="prev-ch">‹ Prev</button>
-    <button class="nbtn" id="next-ch">Next ›</button>
+    <button class="sbtn" id="reader-cog">⚙</button>
+    <button class="nbtn" id="prev-ch">‹</button>
+    <button class="nbtn" id="next-ch">›</button>
   </div>
   <div id="pages"></div>
 </div>
-<footer>KomiOva · data komik dari MangaDex · buat belajar 🎓</footer>
+<div id="reader-settings">
+  <label>Mode Webtoon <input type="radio" name="rmode" value="webtoon" checked></label>
+  <label>Mode Halaman (paged) <input type="radio" name="rmode" value="paged"></label>
+  <label>Lebar halaman <input type="range" id="r-width" min="480" max="1100" step="20" value="760"></label>
+  <label>Tema terang <input type="checkbox" id="r-light"></label>
+  <label>Balik arah (RTL manga) <input type="checkbox" id="r-rtl"></label>
+</div>
+<div id="toast"></div>
+<footer>KomiOva · data MangaDex · buat belajar 🎓</footer>
+
 <script>
-let COMICS=[],FAVS=JSON.parse(localStorage.getItem("komiova_favs")||"[]"),filter="all",q="";
-let CUR=null,CHAP=[],IDX=0;
+/* ============ IndexedDB store ============ */
+const DB_NAME="komiova", DB_VER=1;
+let db;
+function idb(){return new Promise((res,rej)=>{if(db)return res(db);const r=indexedDB.open(DB_NAME,DB_VER);r.onupgradeneeded=e=>{const d=e.target.result;
+  d.createObjectStore("library",{keyPath:"id"});
+  d.createObjectStore("history",{keyPath:"mid"});   // {mid,title,cover,chNum,chTitle,ts}
+  d.createObjectStore("progress",{keyPath:"key"});  // {key:"mid:chnum",page}
+  d.createObjectStore("downloads",{keyPath:"key"}); // {key:"mid:chid",mid,title,chNum,pages:[dataurls|urls],ts}
+};r.onsuccess=e=>{db=e.target.result;res(db)};r.onerror=e=>rej(e)})}
+function tx(store,mode,fn){return idb().then(d=>new Promise((res,rej)=>{const t=d.transaction(store,mode);const s=t.objectStore(store);const out=fn(s);t.oncomplete=()=>res(out&&out.result!==undefined?out.result:out);t.onerror=()=>rej(t.error)}))}
+const dbPut=(st,v)=>tx(st,"readwrite",s=>s.put(v));
+const dbDel=(st,k)=>tx(st,"readwrite",s=>s.delete(k));
+const dbGet=(st,k)=>new Promise((res,rej)=>{idb().then(d=>{const r=d.transaction(st).objectStore(st).get(k);r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)})});
+const dbAll=st=>new Promise((res,rej)=>{idb().then(d=>{const r=d.transaction(st).objectStore(st).getAll();r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)})});
+const dbClear=st=>tx(st,"readwrite",s=>s.clear());
+
+/* ============ state & helpers ============ */
+let COMICS=[],q="",CUR=null,CHAP=[],IDX=0,VIEW="browse";
+let SETTINGS=JSON.parse(localStorage.getItem("komiova_set")||'{"mode":"webtoon","width":760,"light":false,"rtl":false}');
+let LIB_IDS=[];      // library ids cache
+let LAST_READ={};    // mid -> last chapter num read
 const $=s=>document.querySelector(s);
-const msg=t=>{$("#status-msg").textContent=t;$("#status-msg").style.display="block";};
+const $$=s=>document.querySelectorAll(s);
 const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const msg=t=>{const el=$("#status-msg");if(el){el.textContent=t;el.style.display="block";}};
+function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("show");setTimeout(()=>e.classList.remove("show"),2200);}
+function saveSet(){localStorage.setItem("komiova_set",JSON.stringify(SETTINGS));applySettings();}
+function applySettings(){document.body.classList.toggle("light",!!SETTINGS.light);
+  $("#pages")&&$("#pages").style.setProperty("max-width",SETTINGS.width+"px");
+  $("#pages")&&$("#pages").classList.toggle("paged",SETTINGS.mode==="paged");}
+
+/* ============ views ============ */
+function switchView(v){
+  VIEW=v;
+  ["browse","library","history","updates","downloads","settings"].forEach(x=>{$("#view-"+x).style.display=x===v?"block":"none";});
+  $$("#bottom button").forEach(b=>b.classList.toggle("active",b.dataset.v===v));
+  $("#hdr").style.display=(v==="browse")?"flex":"none";
+  if(v==="browse")render();
+  if(v==="library")renderLibrary();
+  if(v==="history")renderHistory();
+  if(v==="updates")renderUpdates();
+  if(v==="downloads")renderDownloads();
+  if(v==="settings")renderSettings();
+}
+$$("#bottom button").forEach(b=>b.onclick=()=>switchView(b.dataset.v));
 
 async function load(){
   msg("Memuat komik…");
-  try{
-    const r=await fetch("/api/manga"+(q?"?q="+encodeURIComponent(q):""));
-    COMICS=await r.json();
-    render();
-  }catch(e){msg("Gagal memuat 😅 coba refresh");}
+  try{COMICS=await (await fetch("/api/manga"+(q?"?q="+encodeURIComponent(q):""))).json();render();}catch(e){msg("Gagal memuat 😅 coba refresh");}
+}
+function cardHTML(c,extra=""){
+  const prog=LAST_READ[c.id]?`<div class="prog" style="width:${Math.min(100,30+LAST_READ[c.id])}%"></div>`:"";
+  return `<div class="comic" onclick="openDetail('${c.id}')">
+    <div class="cover-wrap"><img src="${c.cover}" loading="lazy">
+    ${extra}<span class="badge ${(c.status||"").toLowerCase()}">${esc(c.status)}</span>${prog}</div>
+    <h3>${esc(c.title)}</h3><p>${esc(c.author)}</p></div>`;
 }
 function render(){
   let list=COMICS;
-  if(filter==="fav")list=list.filter(c=>FAVS.includes(c.id));
-  $("#sec-title").textContent=filter==="fav"?"Komik Favorit":(q?`Hasil: "${q}"`:"Komik Populer");
-  $("#grid").innerHTML=list.map(c=>`
-    <div class="comic" onclick="openDetail('${c.id}')">
-      <div class="cover-wrap">
-        <img src="${c.cover}" alt="${esc(c.title)}" loading="lazy">
-        <span class="badge ${(c.status||"").toLowerCase()}">${esc(c.status)}</span>
-        <button class="fav ${FAVS.includes(c.id)?"on":""}" onclick="toggleFav(event,'${c.id}')">${FAVS.includes(c.id)?"★":"☆"}</button>
-      </div>
-      <h3>${esc(c.title)}</h3><p>${esc(c.author)}</p>
-    </div>`).join("");
+  $("#sec-title").textContent=q?`Hasil: "${q}"`:"Komik Populer";
+  $("#grid").innerHTML=list.map(c=>cardHTML(c)).join("");
   $("#status-msg").textContent=list.length?"":"Nggak ada komik yang cocok 😅";
   $("#status-msg").style.display=list.length?"none":"block";
 }
-function toggleFav(e,id){e.stopPropagation();FAVS=FAVS.includes(id)?FAVS.filter(x=>x!==id):[...FAVS,id];localStorage.setItem("komiova_favs",JSON.stringify(FAVS));render();}
+$("#search").oninput=e=>{clearTimeout(window._tmr);const v=e.target.value.trim();window._tmr=setTimeout(()=>{q=v;load();},500);};
 
+/* ============ LIBRARY ============ */
+async function renderLibrary(){
+  const el=$("#view-library");
+  const lib=await dbAll("library");
+  if(!lib.length){el.innerHTML='<h2 class="section">Library</h2><div class="empty">Library masih kosong 📚<br>Buka komik lalu tekan "+ Library"</div>';return;}
+  el.innerHTML='<h2 class="section">Library ('+lib.length+')</h2><div class="grid">'+lib.map(c=>cardHTML(c)).join("")+"</div>";
+}
+async function toggleLib(id){
+  const inLib=LIB_IDS.includes(id);
+  const c=CUR&&CUR.id===id?CUR:COMICS.find(x=>x.id===id);
+  if(inLib){await dbDel("library",id);LIB_IDS=LIB_IDS.filter(x=>x!==id);toast("Dihapus dari Library");}
+  else{await dbPut("library",{...c});LIB_IDS.push(id);toast("Ditambahkan ke Library ⭐");}
+  if(VIEW==="browse")render();
+  if(VIEW==="library")renderLibrary();
+}
+
+/* ============ HISTORY & PROGRESS ============ */
+async function renderHistory(){
+  const el=$("#view-history");
+  const hist=(await dbAll("history")).sort((a,b)=>b.ts-a.ts);
+  if(!hist.length){el.innerHTML='<h2 class="section">Riwayat</h2><div class="empty">Belum ada riwayat baca 🕐</div>';return;}
+  el.innerHTML='<h2 class="section">Riwayat</h2>'+hist.map(h=>`
+    <div class="row" onclick="resumeRead('${h.mid}','${h.chNum}')">
+      <img src="${h.cover}"><div class="inf"><div class="t">${esc(h.title)}</div>
+      <div class="s">Terakhir: Ch. ${esc(h.chNum)} — ${esc(h.chTitle||"")} · ${new Date(h.ts).toLocaleDateString("id-ID")}</div></div>
+      <button class="act solid">▶ Lanjut</button></div>`).join("");
+}
+async function resumeRead(mid,chNum){
+  const det=await (await fetch("/api/manga/"+mid)).json();
+  CUR=det;CHAP=det.chapters||[];
+  const i=CHAP.findIndex(c=>c.num===String(chNum));
+  openReader(i>=0?i:0);
+}
+
+/* ============ UPDATES ============ */
+let UPD_SEEN=JSON.parse(localStorage.getItem("komiova_seen")||"{}");
+async function checkUpdates(silent){
+  const lib=await dbAll("library");
+  if(!lib.length){if(!silent)toast("Library kosong");switchView("updates");return;}
+  const ids=lib.map(x=>x.id).join(",");
+  const res=await (await fetch("/api/updates?ids="+ids)).json();
+  const rows=[];
+  for(const m of lib){
+    const u=res[m.id];if(!u)continue;
+    const lastRead=LAST_READ[m.id]||0;
+    const isNew=parseFloat(u.num)>parseFloat(lastRead)&&!(UPD_SEEN[m.id+":"+u.num]);
+    rows.push({m,u,isNew});
+  }
+  rows.sort((a,b)=>(b.u.published||"").localeCompare(a.u.published||""));
+  const el=$("#view-updates");
+  el.innerHTML='<h2 class="section">Update ('+rows.length+')</h2>'+(rows.length?rows.map(({m,u,isNew})=>`
+    <div class="row" onclick="openChapter('${m.id}','${u.id}')">
+      <img src="${m.cover}"><div class="inf">
+      <div class="t">${esc(m.title)} ${isNew?'<span style="color:#e5484d;font-weight:800">● NEW</span>':""}</div>
+      <div class="s">Ch. ${esc(u.num)} ${esc(u.title||"")} · ${u.lang==="id"?"🇮🇩":"🇬🇧"} ${u.published?new Date(u.published).toLocaleDateString("id-ID"):""}</div></div>
+      <button class="act solid">Baca</button></div>`).join(""):'<div class="empty">Belum ada update</div>');
+  const n=rows.filter(r=>r.isNew).length;
+  const cnt=$("#cnt-upd");cnt.textContent=n>99?"99+":n;cnt.style.display=n?"flex":"none";
+}
+async function markSeen(mid,num){UPD_SEEN[mid+":"+num]=1;localStorage.setItem("komiova_seen",JSON.stringify(UPD_SEEN));}
+setInterval(()=>{if(LIB_IDS.length)checkUpdates(true);},10*60*1000); // auto tiap 10 menit
+
+/* ============ DOWNLOADS (offline) ============ */
+async function downloadChapter(mid,ch){
+  const key=mid+":"+ch.id;
+  if(await dbGet("downloads",key)){toast("Sudah terunduh ✅");return;}
+  toast("Mengunduh Ch. "+ch.num+"…");
+  try{
+    const d=await (await fetch("/api/chapter/"+ch.id)).json();
+    const pages=[];
+    for(const u of (d.pages||[])){
+      const img=await fetch(u);const blob=await img.blob();
+      pages.push(await new Promise(r=>{const fr=new FileReader();fr.onload=()=>r(fr.result);fr.readAsDataURL(blob);}));
+    }
+    await dbPut("downloads",{key,mid,title:CUR?CUR.title:"",chNum:ch.num,chTitle:ch.title,cover:CUR?CUR.cover:"",pages,ts:Date.now()});
+    toast("Ch. "+ch.num+" terunduh ✅ ("+pages.length+" hal)");
+  }catch(e){toast("Gagal mengunduh 😅");}
+}
+async function renderDownloads(){
+  const el=$("#view-downloads");
+  const dls=(await dbAll("downloads")).sort((a,b)=>b.ts-a.ts);
+  if(!dls.length){el.innerHTML='<h2 class="section">Download</h2><div class="empty">Belum ada chapter terunduh 📥<br>Buka daftar chapter lalu tekan ⬇</div>';return;}
+  el.innerHTML='<h2 class="section">Download ('+dls.length+')</h2>'+dls.map(d=>`
+    <div class="row" onclick="readOffline('${d.key}')">
+      <img src="${d.cover}"><div class="inf">
+      <div class="t">${esc(d.title)}</div>
+      <div class="s">Ch. ${esc(d.chNum)} — ${esc(d.chTitle||"")} · ${d.pages.length} hal · offline ✅</div></div>
+      <button class="act solid">Baca</button></div>`).join("");
+}
+function readOffline(key){
+  dbGet("downloads",key).then(d=>{
+    if(!d)return;
+    CUR={title:d.title,chapters:[]};CHAP=[];IDX=-1;
+    $("#r-title").textContent=`${d.title} — Ch. ${d.chNum} (offline)`;
+    $("#pages").innerHTML=d.pages.map(p=>`<img src="${p}">`).join("");
+    $("#r-pages").textContent=d.pages.length+" hal";
+    $("#prev-ch").disabled=true;$("#next-ch").disabled=true;
+    $("#reader").style.display="block";document.body.style.overflow="hidden";$("#reader").scrollTop=0;
+  });
+}
+
+/* ============ DETAIL ============ */
 async function openDetail(id){
-  $("#home").style.display="none";
+  ["browse","library","history","updates","downloads","settings"].forEach(x=>{$("#view-"+x).style.display="none";});
+  $("#hdr").style.display="none";
   const d=$("#detail");d.style.display="block";d.innerHTML='<div class="loading">Memuat detail…</div>';
   window.scrollTo(0,0);
   try{
     const c=await (await fetch("/api/manga/"+id)).json();
     CUR=c;CHAP=c.chapters||[];
+    const inLib=LIB_IDS.includes(id);
+    const h=await dbGet("history",id);
+    const dls=await dbAll("downloads");
+    const dlSet=new Set(dls.filter(x=>x.mid===id).map(x=>x.chNum));
     d.innerHTML=`<button class="back" onclick="goHome()">← Kembali</button>
       <div class="detail-head">
         <img src="${c.cover}">
@@ -143,25 +338,36 @@ async function openDetail(id){
           <div class="meta">✍ ${esc(c.author)} · 📡 ${esc(c.status)} · 📖 ${CHAP.length} chapter</div>
           <div class="tags">${(c.tags||[]).slice(0,6).map(g=>`<span class="tag">${esc(g)}</span>`).join("")}</div>
           <p class="desc">${esc(c.desc)}</p>
+          <div class="ch-bar" style="margin:0 0 8px">
+            <button class="read" onclick="toggleLib('${id}')">${inLib?"✓ Di Library":"＋ Library"}</button>
+            ${h?`<button class="read blue" onclick="resumeRead('${id}','${h.chNum}')">▶ Lanjut Ch. ${esc(h.chNum)}</button>`:""}
+          </div>
         </div>
       </div>
       <div class="ch-list"><h2 class="section">Daftar Chapter (${CHAP.length})</h2>
       ${CHAP.length?`<div class="ch-bar">
         <button class="read" onclick="openReader(0)">▶ Dari Ch. 1</button>
-        <button class="read" style="background:#3a7bd5" onclick="openReader(CHAP.length-1)">⏭ Chapter Terbaru</button>
+        <button class="read blue" onclick="openReader(CHAP.length-1)">⏭ Terbaru</button>
         <select onchange="openReader(parseInt(this.value))">
-          <option value="">⬇ Lompat ke chapter…</option>
-          ${CHAP.map((ch,i)=>`<option value="${i}">Ch. ${esc(ch.num)} — ${esc(ch.title).slice(0,50)}</option>`).join("")}
+          <option value="">⬇ Lompat…</option>
+          ${CHAP.map((ch,i)=>`<option value="${i}">Ch. ${esc(ch.num)} — ${esc(ch.title).slice(0,45)} ${ch.lang==="id"?"🇮🇩":""}</option>`).join("")}
         </select>
       </div>
       <div class="ch-scroll">
-      ${CHAP.map((ch,i)=>`<div class="ch-item" onclick="openReader(${i})"><span class="nm">Ch. ${esc(ch.num)} — ${esc(ch.title)}</span><span class="meta">${ch.lang==="id"?"🇮🇩":"🇬🇧"} ${ch.pages_count} hal</span></div>`).join("")}
+      ${CHAP.map((ch,i)=>`<div class="ch-item ${(LAST_READ[id]>=parseFloat(ch.num))?"readed":""}" onclick="openReader(${i})">
+        <span class="nm">Ch. ${esc(ch.num)} — ${esc(ch.title)}</span>
+        <span style="display:flex;gap:8px;align-items:center;flex-shrink:0">
+          ${ch.lang==="id"?"🇮🇩":""}
+          <span class="meta">${ch.pages_count} hal</span>
+          <button class="dl" title="Download offline" onclick="event.stopPropagation();downloadChapter('${id}',CHAP[${i}])">⬇</button>
+        </span></div>`).join("")}
       </div>`:'<div class="loading">Belum ada chapter yang tersedia 😌</div>'}
       </div>`;
   }catch(e){d.innerHTML='<button class="back" onclick="goHome()">← Kembali</button><div class="loading">Gagal memuat detail</div>';}
 }
-function goHome(){$("#detail").style.display="none";$("#detail").innerHTML="";$("#home").style.display="block";}
+function goHome(){switchView(VIEW);$("#detail").style.display="none";$("#detail").innerHTML="";}
 
+/* ============ READER ============ */
 async function openReader(i){
   if(!CHAP.length)return;
   IDX=Math.max(0,Math.min(i,CHAP.length-1));
@@ -171,43 +377,80 @@ async function openReader(i){
   $("#pages").innerHTML='<div class="loading">Memuat halaman…</div>';
   $("#reader").style.display="block";document.body.style.overflow="hidden";$("#reader").scrollTop=0;
   $("#prev-ch").disabled=IDX<=0;$("#next-ch").disabled=IDX>=CHAP.length-1;
+  // save history+progress
+  await dbPut("history",{mid:CUR.id,title:CUR.title,cover:CUR.cover,chNum:ch.num,chTitle:ch.title,ts:Date.now()});
+  LAST_READ[CUR.id]=Math.max(LAST_READ[CUR.id]||0,parseFloat(ch.num)||0);
+  markSeen(CUR.id,ch.num);
   try{
-    const d=await (await fetch("/api/chapter/"+ch.id)).json();
-    $("#pages").innerHTML=(d.pages||[]).map(p=>`<img src="${p}" loading="lazy">`).join("")||'<div class="loading">Halaman kosong</div>';
-    $("#r-pages").textContent=(d.pages||[]).length+" hal";
+    // offline dulu kalau ada
+    const dl=await dbGet("downloads",CUR.id+":"+ch.id);
+    if(dl){$("#pages").innerHTML=dl.pages.map(p=>`<img src="${p}">`).join("");$("#r-pages").textContent=dl.pages.length+" hal · offline";}
+    else{
+      const d=await (await fetch("/api/chapter/"+ch.id)).json();
+      $("#pages").innerHTML=(d.pages||[]).map(p=>`<img src="${p}" loading="lazy">`).join("")||'<div class="loading">Halaman kosong</div>';
+      $("#r-pages").textContent=(d.pages||[]).length+" hal";
+      // save progress per page while scrolling
+      $("#pages").onscroll=async()=>{const max=$("#reader").scrollHeight-$("#reader").clientHeight;const p=Math.round($("#reader").scrollTop/(max||1)*100);await dbPut("progress",{key:CUR.id+":"+ch.num,page:p});};
+    }
   }catch(e){$("#pages").innerHTML='<div class="loading">Gagal memuat halaman 😅</div>';}
 }
-$("#prev-ch").onclick=()=>openReader(IDX-1);
-$("#next-ch").onclick=()=>openReader(IDX+1);
-$("#close-reader").onclick=()=>{$("#reader").style.display="none";document.body.style.overflow="";};
+$("#prev-ch").onclick=()=>openReader(IDX-(SETTINGS.rtl?-1:1));
+$("#next-ch").onclick=()=>openReader(IDX+(SETTINGS.rtl?-1:1));
+$("#close-reader").onclick=()=>{$("#reader").style.display="none";document.body.style.overflow="";if(VIEW==="updates")checkUpdates(true);};
+$("#reader-cog").onclick=()=>{const p=$("#reader-settings");p.style.display=p.style.display==="block"?"none":"block";};
+document.addEventListener("change",e=>{
+  if(e.target.name==="rmode"){SETTINGS.mode=e.target.value;saveSet();}
+  if(e.target.id==="r-width"){SETTINGS.width=+e.target.value;saveSet();}
+  if(e.target.id==="r-light"){SETTINGS.light=e.target.checked;saveSet();}
+  if(e.target.id==="r-rtl"){SETTINGS.rtl=e.target.checked;saveSet();}
+});
 document.addEventListener("keydown",e=>{
   if($("#reader").style.display!=="block")return;
   if(e.key==="ArrowLeft"&&IDX>0)openReader(IDX-1);
   if(e.key==="ArrowRight"&&IDX<CHAP.length-1)openReader(IDX+1);
   if(e.key==="Escape")$("#close-reader").click();
 });
-let tmr; $("#search").oninput=e=>{clearTimeout(tmr);const v=e.target.value.trim();tmr=setTimeout(()=>{q=v;load();},500);};
-document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));t.classList.add("active");filter=t.dataset.f;render();});
-load();
 
-// PWA service worker
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("/static/sw.js").catch(()=>{}));
+/* ============ SETTINGS ============ */
+function renderSettings(){
+  $("#view-settings").innerHTML=`<h2 class="section">Setelan</h2>
+  <div class="row" style="cursor:default"><div class="inf"><div class="t">🌙 Tema</div><div class="s">Terang / gelap</div></div>
+    <input type="checkbox" id="set-light" ${SETTINGS.light?"checked":""}></div>
+  <div class="row" style="cursor:default"><div class="inf"><div class="t">📖 Mode baca default</div></div>
+    <select id="set-mode"><option value="webtoon" ${SETTINGS.mode==="webtoon"?"selected":""}>Webtoon</option><option value="paged" ${SETTINGS.mode==="paged"?"selected":""}>Paged</option></select></div>
+  <div class="row" style="cursor:default" onclick="checkUpdates(false)"><div class="inf"><div class="t">🔄 Cek update library</div><div class="s">Tap untuk cek sekarang</div></div><span class="act">Cek</span></div>
+  <div class="row" style="cursor:default"><div class="inf"><div class="t">🗑️ Hapus semua data lokal</div><div class="s">Library, riwayat, download</div></div>
+    <button class="act" style="border-color:#e5484d;color:#e5484d" onclick="wipeAll()">Hapus</button></div>
+  <div class="empty" style="padding:20px">KomiOva v1.0 · dibuat bareng Hermes 🤖</div>`;
+  $("#set-light").onchange=e=>{SETTINGS.light=e.target.checked;saveSet();};
+  $("#set-mode").onchange=e=>{SETTINGS.mode=e.target.value;saveSet();};
+}
+async function wipeAll(){
+  if(!confirm("Hapus SEMUA data lokal (library, riwayat, download)?"))return;
+  await Promise.all([dbClear("library"),dbClear("history"),dbClear("progress"),dbClear("downloads")]);
+  LIB_IDS=[];LAST_READ={};UPD_SEEN={};localStorage.removeItem("komiova_seen");
+  toast("Data lokal dihapus 🗑️");renderSettings();
 }
 
-// Install prompt (Android Chrome)
-let deferredPrompt = null;
-const installBtn = document.createElement("button");
-installBtn.textContent = "📲 Install App";
-installBtn.style.cssText = "position:fixed;bottom:16px;right:16px;z-index:60;background:var(--accent);border:none;color:#fff;padding:12px 20px;border-radius:999px;font-weight:700;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.5);display:none";
+/* ============ init ============ */
+(async()=>{
+  await idb();
+  const lib=await dbAll("library");LIB_IDS=lib.map(x=>x.id);
+  const hist=await dbAll("history");
+  hist.forEach(h=>LAST_READ[h.mid]=Math.max(LAST_READ[h.mid]||0,parseFloat(h.chNum)||0));
+  applySettings();
+  await load();
+  if(LIB_IDS.length)checkUpdates(true);
+})();
+
+/* ============ PWA ============ */
+if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("/static/sw.js").catch(()=>{}));}
+let deferredPrompt=null;const installBtn=document.createElement("button");
+installBtn.textContent="📲 Install App";installBtn.style.cssText="position:fixed;bottom:calc(var(--navh) + 16px);right:16px;z-index:60;background:var(--accent);border:none;color:#fff;padding:12px 20px;border-radius:999px;font-weight:700;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.5);display:none";
 document.body.appendChild(installBtn);
-window.addEventListener("beforeinstallprompt", e => {
-  e.preventDefault(); deferredPrompt = e; installBtn.style.display = "block";
-});
-installBtn.onclick = async () => {
-  if (deferredPrompt) { deferredPrompt.prompt(); await deferredPrompt.userChoice; deferredPrompt = null; installBtn.style.display = "none"; }
-};
-window.addEventListener("appinstalled", () => installBtn.style.display = "none");
+window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;installBtn.style.display="block";});
+installBtn.onclick=async()=>{if(deferredPrompt){deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;installBtn.style.display="none";}};
+window.addEventListener("appinstalled",()=>installBtn.style.display="none");
 </script>
 </body>
 </html>

@@ -123,6 +123,36 @@ def api_manga_detail(mid):
     info["chapters"] = sorted(chapters, key=_ch_key)
     return jsonify(info)
 
+@app.route("/api/updates")
+def api_updates():
+    """Bulk: for up to 60 manga ids, return the newest chapter (num + id + lang)."""
+    ids = [i for i in request.args.get("ids", "").split(",") if i][:60]
+    if not ids:
+        return jsonify({})
+
+    def latest(mid):
+        try:
+            ch = md_get("/manga/%s/feed" % mid, {
+                "translatedLanguage[]": ["id", "en"], "limit": 1,
+                "order[chapter]": "desc", "includeExternalUrl": 0,
+            })
+            data = ch.get("data", [])
+            if not data:
+                return mid, None
+            a = data[0]["attributes"]
+            return mid, {
+                "id": data[0]["id"], "num": a.get("chapter") or "0",
+                "title": a.get("title") or "", "lang": a.get("translatedLanguage", "en"),
+                "published": a.get("publishAt", ""),
+            }
+        except Exception:
+            return mid, None
+
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        results = dict(ex.map(latest, ids))
+    return jsonify(results)
+
+
 @app.route("/api/chapter/<cid>")
 def api_chapter(cid):
     d = md_get(f"/at-home/server/{cid}")
