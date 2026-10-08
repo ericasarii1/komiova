@@ -13,19 +13,345 @@
   "chapters": [
    {
     "num": 1,
-    "title": "Double Dungeon",
+    "title": "Awal Perjalanan",
     "pages": [
-     "https://placehold.co/800x1200/141428/ffffff?text=Ch1+-+Page+1",
-     "https://placehold.co/800x1200/1a1a3e/ffffff?text=Ch1+-+Page+2",
-     "https://placehold.co/800x1200/20204a/ffffff?text=Ch1+-+Page+3"
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch1+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch1+-+Page+3"
     ]
    },
    {
     "num": 2,
-    "title": "The System",
+    "title": "Bayangan Muncul",
     "pages": [
-     "https://placehold.co/800x1200/141428/ffffff?text=Ch2+-+Page+1",
-     "https://placehold.co/800x1200/1a1a3e/ffffff?text=Ch2+-+Page+2"
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch2+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch2+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch2+-+Page+3"
+    ]
+   },
+   {
+    "num": 3,
+    "title": "Duel Pertama",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch3+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch3+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch3+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch3+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch3+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch3+-+Page+6",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch3+-+Page+7",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch3+-+Page+8"
+    ]
+   },
+   {
+    "num": 4,
+    "title": "Rahasia Terbongkar",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch4+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch4+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch4+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch4+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch4+-+Page+5"
+    ]
+   },
+   {
+    "num": 5,
+    "title": "Kekuatan Baru",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch5+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch5+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch5+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch5+-+Page+4"
+    ]
+   },
+   {
+    "num": 6,
+    "title": "Sekutu Tak Terduga",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch6+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch6+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch6+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch6+-+Page+4"
+    ]
+   },
+   {
+    "num": 7,
+    "title": "Pertarungan Sengit",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch7+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch7+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch7+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch7+-+Page+4"
+    ]
+   },
+   {
+    "num": 8,
+    "title": "Tangga Menuju Atas",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch8+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch8+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch8+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch8+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch8+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch8+-+Page+6",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch8+-+Page+7",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch8+-+Page+8"
+    ]
+   },
+   {
+    "num": 9,
+    "title": "Sisi Gelap",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch9+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch9+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch9+-+Page+3"
+    ]
+   },
+   {
+    "num": 10,
+    "title": "Keputusan Berani",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch10+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch10+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch10+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch10+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch10+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch10+-+Page+6",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch10+-+Page+7",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch10+-+Page+8"
+    ]
+   },
+   {
+    "num": 11,
+    "title": "Sinyal Bahaya",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch11+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch11+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch11+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch11+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch11+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch11+-+Page+6",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch11+-+Page+7",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch11+-+Page+8"
+    ]
+   },
+   {
+    "num": 12,
+    "title": "Semangat Membara",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch12+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch12+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch12+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch12+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch12+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch12+-+Page+6",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch12+-+Page+7"
+    ]
+   },
+   {
+    "num": 13,
+    "title": "Luka dan Harapan",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch13+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch13+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch13+-+Page+3"
+    ]
+   },
+   {
+    "num": 14,
+    "title": "Musuh yang Nyata",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch14+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch14+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch14+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch14+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch14+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch14+-+Page+6",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch14+-+Page+7"
+    ]
+   },
+   {
+    "num": 15,
+    "title": "Titik Balik",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch15+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch15+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch15+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch15+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch15+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch15+-+Page+6"
+    ]
+   },
+   {
+    "num": 16,
+    "title": "Nama yang Diingat",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch16+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch16+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch16+-+Page+3"
+    ]
+   },
+   {
+    "num": 17,
+    "title": "Sangat Dekat",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch17+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch17+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch17+-+Page+3"
+    ]
+   },
+   {
+    "num": 18,
+    "title": "Ledakan",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch18+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch18+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch18+-+Page+3"
+    ]
+   },
+   {
+    "num": 19,
+    "title": "Perjanjian",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch19+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch19+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch19+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch19+-+Page+4"
+    ]
+   },
+   {
+    "num": 20,
+    "title": "Fajar Baru",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch20+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch20+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch20+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch20+-+Page+4"
+    ]
+   },
+   {
+    "num": 21,
+    "title": "Pemberontakan",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch21+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch21+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch21+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch21+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch21+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch21+-+Page+6",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch21+-+Page+7"
+    ]
+   },
+   {
+    "num": 22,
+    "title": "Batas Kemampuan",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch22+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch22+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch22+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch22+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch22+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch22+-+Page+6",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch22+-+Page+7"
+    ]
+   },
+   {
+    "num": 23,
+    "title": "Kebenaran",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch23+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch23+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch23+-+Page+3"
+    ]
+   },
+   {
+    "num": 24,
+    "title": "Yang Tertinggal",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch24+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch24+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch24+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch24+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch24+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch24+-+Page+6",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch24+-+Page+7"
+    ]
+   },
+   {
+    "num": 25,
+    "title": "Gerbang Terakhir",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch25+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch25+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch25+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch25+-+Page+4"
+    ]
+   },
+   {
+    "num": 26,
+    "title": "Dunia Lain",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch26+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch26+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch26+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch26+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch26+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch26+-+Page+6",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch26+-+Page+7",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch26+-+Page+8"
+    ]
+   },
+   {
+    "num": 27,
+    "title": "Warisan",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch27+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch27+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch27+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch27+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch27+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch27+-+Page+6",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch27+-+Page+7",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch27+-+Page+8"
+    ]
+   },
+   {
+    "num": 28,
+    "title": "Garis Depan",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch28+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch28+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch28+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch28+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch28+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch28+-+Page+6",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch28+-+Page+7",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch28+-+Page+8"
+    ]
+   },
+   {
+    "num": 29,
+    "title": "Hari Penentuan",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch29+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch29+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch29+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch29+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch29+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch29+-+Page+6",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch29+-+Page+7"
+    ]
+   },
+   {
+    "num": 30,
+    "title": "Epilog Sementara",
+    "pages": [
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch30+-+Page+1",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch30+-+Page+2",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch30+-+Page+3",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch30+-+Page+4",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch30+-+Page+5",
+     "https://placehold.co/800x1200/1a1a2e/ff6b35?text=Ch30+-+Page+6"
     ]
    }
   ]
@@ -44,10 +370,186 @@
   "chapters": [
    {
     "num": 1,
-    "title": "Nano Machine",
+    "title": "Awal Perjalanan",
     "pages": [
-     "https://placehold.co/800x1200/2d132c/ffffff?text=Ch1+-+Page+1",
-     "https://placehold.co/800x1200/3a1a3e/ffffff?text=Ch1+-+Page+2"
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch1+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch1+-+Page+3",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch1+-+Page+4",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch1+-+Page+5",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch1+-+Page+6"
+    ]
+   },
+   {
+    "num": 2,
+    "title": "Bayangan Muncul",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch2+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch2+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch2+-+Page+3",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch2+-+Page+4",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch2+-+Page+5",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch2+-+Page+6",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch2+-+Page+7"
+    ]
+   },
+   {
+    "num": 3,
+    "title": "Duel Pertama",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch3+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch3+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch3+-+Page+3",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch3+-+Page+4",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch3+-+Page+5"
+    ]
+   },
+   {
+    "num": 4,
+    "title": "Rahasia Terbongkar",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch4+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch4+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch4+-+Page+3"
+    ]
+   },
+   {
+    "num": 5,
+    "title": "Kekuatan Baru",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch5+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch5+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch5+-+Page+3",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch5+-+Page+4"
+    ]
+   },
+   {
+    "num": 6,
+    "title": "Sekutu Tak Terduga",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch6+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch6+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch6+-+Page+3",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch6+-+Page+4",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch6+-+Page+5",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch6+-+Page+6",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch6+-+Page+7",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch6+-+Page+8"
+    ]
+   },
+   {
+    "num": 7,
+    "title": "Pertarungan Sengit",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch7+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch7+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch7+-+Page+3",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch7+-+Page+4",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch7+-+Page+5",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch7+-+Page+6"
+    ]
+   },
+   {
+    "num": 8,
+    "title": "Tangga Menuju Atas",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch8+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch8+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch8+-+Page+3",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch8+-+Page+4",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch8+-+Page+5"
+    ]
+   },
+   {
+    "num": 9,
+    "title": "Sisi Gelap",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch9+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch9+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch9+-+Page+3",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch9+-+Page+4",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch9+-+Page+5"
+    ]
+   },
+   {
+    "num": 10,
+    "title": "Keputusan Berani",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch10+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch10+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch10+-+Page+3",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch10+-+Page+4"
+    ]
+   },
+   {
+    "num": 11,
+    "title": "Sinyal Bahaya",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch11+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch11+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch11+-+Page+3",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch11+-+Page+4"
+    ]
+   },
+   {
+    "num": 12,
+    "title": "Semangat Membara",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch12+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch12+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch12+-+Page+3",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch12+-+Page+4",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch12+-+Page+5"
+    ]
+   },
+   {
+    "num": 13,
+    "title": "Luka dan Harapan",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch13+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch13+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch13+-+Page+3"
+    ]
+   },
+   {
+    "num": 14,
+    "title": "Musuh yang Nyata",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch14+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch14+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch14+-+Page+3"
+    ]
+   },
+   {
+    "num": 15,
+    "title": "Titik Balik",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch15+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch15+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch15+-+Page+3",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch15+-+Page+4",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch15+-+Page+5",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch15+-+Page+6"
+    ]
+   },
+   {
+    "num": 16,
+    "title": "Nama yang Diingat",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch16+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch16+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch16+-+Page+3"
+    ]
+   },
+   {
+    "num": 17,
+    "title": "Sangat Dekat",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch17+-+Page+1",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch17+-+Page+2",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch17+-+Page+3",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch17+-+Page+4",
+     "https://placehold.co/800x1200/2d132c/e94560?text=Ch17+-+Page+5"
     ]
    }
   ]
@@ -66,11 +568,245 @@
   "chapters": [
    {
     "num": 1,
-    "title": "Awal Pertemuan",
+    "title": "Awal Perjalanan",
     "pages": [
-     "https://placehold.co/800x1200/0f3460/ffffff?text=Ch1+-+Page+1",
-     "https://placehold.co/800x1200/144a80/ffffff?text=Ch1+-+Page+2",
-     "https://placehold.co/800x1200/0f3460/ffffff?text=Ch1+-+Page+3"
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch1+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch1+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch1+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch1+-+Page+5",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch1+-+Page+6",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch1+-+Page+7"
+    ]
+   },
+   {
+    "num": 2,
+    "title": "Bayangan Muncul",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch2+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch2+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch2+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch2+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch2+-+Page+5"
+    ]
+   },
+   {
+    "num": 3,
+    "title": "Duel Pertama",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch3+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch3+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch3+-+Page+3"
+    ]
+   },
+   {
+    "num": 4,
+    "title": "Rahasia Terbongkar",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch4+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch4+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch4+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch4+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch4+-+Page+5",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch4+-+Page+6",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch4+-+Page+7",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch4+-+Page+8"
+    ]
+   },
+   {
+    "num": 5,
+    "title": "Kekuatan Baru",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch5+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch5+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch5+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch5+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch5+-+Page+5",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch5+-+Page+6"
+    ]
+   },
+   {
+    "num": 6,
+    "title": "Sekutu Tak Terduga",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch6+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch6+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch6+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch6+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch6+-+Page+5",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch6+-+Page+6",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch6+-+Page+7"
+    ]
+   },
+   {
+    "num": 7,
+    "title": "Pertarungan Sengit",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch7+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch7+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch7+-+Page+3"
+    ]
+   },
+   {
+    "num": 8,
+    "title": "Tangga Menuju Atas",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch8+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch8+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch8+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch8+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch8+-+Page+5",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch8+-+Page+6"
+    ]
+   },
+   {
+    "num": 9,
+    "title": "Sisi Gelap",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch9+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch9+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch9+-+Page+3"
+    ]
+   },
+   {
+    "num": 10,
+    "title": "Keputusan Berani",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch10+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch10+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch10+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch10+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch10+-+Page+5",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch10+-+Page+6",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch10+-+Page+7"
+    ]
+   },
+   {
+    "num": 11,
+    "title": "Sinyal Bahaya",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch11+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch11+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch11+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch11+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch11+-+Page+5"
+    ]
+   },
+   {
+    "num": 12,
+    "title": "Semangat Membara",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch12+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch12+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch12+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch12+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch12+-+Page+5",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch12+-+Page+6",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch12+-+Page+7",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch12+-+Page+8"
+    ]
+   },
+   {
+    "num": 13,
+    "title": "Luka dan Harapan",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch13+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch13+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch13+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch13+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch13+-+Page+5",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch13+-+Page+6",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch13+-+Page+7"
+    ]
+   },
+   {
+    "num": 14,
+    "title": "Musuh yang Nyata",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch14+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch14+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch14+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch14+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch14+-+Page+5"
+    ]
+   },
+   {
+    "num": 15,
+    "title": "Titik Balik",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch15+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch15+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch15+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch15+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch15+-+Page+5",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch15+-+Page+6",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch15+-+Page+7"
+    ]
+   },
+   {
+    "num": 16,
+    "title": "Nama yang Diingat",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch16+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch16+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch16+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch16+-+Page+4"
+    ]
+   },
+   {
+    "num": 17,
+    "title": "Sangat Dekat",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch17+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch17+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch17+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch17+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch17+-+Page+5",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch17+-+Page+6",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch17+-+Page+7",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch17+-+Page+8"
+    ]
+   },
+   {
+    "num": 18,
+    "title": "Ledakan",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch18+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch18+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch18+-+Page+3"
+    ]
+   },
+   {
+    "num": 19,
+    "title": "Perjanjian",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch19+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch19+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch19+-+Page+3"
+    ]
+   },
+   {
+    "num": 20,
+    "title": "Fajar Baru",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch20+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch20+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch20+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch20+-+Page+4",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch20+-+Page+5",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch20+-+Page+6",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch20+-+Page+7",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch20+-+Page+8"
+    ]
+   },
+   {
+    "num": 21,
+    "title": "Pemberontakan",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch21+-+Page+1",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch21+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch21+-+Page+3",
+     "https://placehold.co/800x1200/0f3460/ffd369?text=Ch21+-+Page+4"
     ]
    }
   ]
@@ -89,10 +825,221 @@
   "chapters": [
    {
     "num": 1,
-    "title": "Prologue",
+    "title": "Awal Perjalanan",
     "pages": [
-     "https://placehold.co/800x1200/22223b/ffffff?text=Ch1+-+Page+1",
-     "https://placehold.co/800x1200/2a2a4a/ffffff?text=Ch1+-+Page+2"
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch1+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch1+-+Page+3"
+    ]
+   },
+   {
+    "num": 2,
+    "title": "Bayangan Muncul",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch2+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch2+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch2+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch2+-+Page+4"
+    ]
+   },
+   {
+    "num": 3,
+    "title": "Duel Pertama",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch3+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch3+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch3+-+Page+3"
+    ]
+   },
+   {
+    "num": 4,
+    "title": "Rahasia Terbongkar",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch4+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch4+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch4+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch4+-+Page+4",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch4+-+Page+5",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch4+-+Page+6"
+    ]
+   },
+   {
+    "num": 5,
+    "title": "Kekuatan Baru",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch5+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch5+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch5+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch5+-+Page+4",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch5+-+Page+5"
+    ]
+   },
+   {
+    "num": 6,
+    "title": "Sekutu Tak Terduga",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch6+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch6+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch6+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch6+-+Page+4",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch6+-+Page+5",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch6+-+Page+6"
+    ]
+   },
+   {
+    "num": 7,
+    "title": "Pertarungan Sengit",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch7+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch7+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch7+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch7+-+Page+4",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch7+-+Page+5",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch7+-+Page+6",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch7+-+Page+7",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch7+-+Page+8"
+    ]
+   },
+   {
+    "num": 8,
+    "title": "Tangga Menuju Atas",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch8+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch8+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch8+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch8+-+Page+4",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch8+-+Page+5"
+    ]
+   },
+   {
+    "num": 9,
+    "title": "Sisi Gelap",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch9+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch9+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch9+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch9+-+Page+4"
+    ]
+   },
+   {
+    "num": 10,
+    "title": "Keputusan Berani",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch10+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch10+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch10+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch10+-+Page+4",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch10+-+Page+5"
+    ]
+   },
+   {
+    "num": 11,
+    "title": "Sinyal Bahaya",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch11+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch11+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch11+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch11+-+Page+4",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch11+-+Page+5"
+    ]
+   },
+   {
+    "num": 12,
+    "title": "Semangat Membara",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch12+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch12+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch12+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch12+-+Page+4"
+    ]
+   },
+   {
+    "num": 13,
+    "title": "Luka dan Harapan",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch13+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch13+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch13+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch13+-+Page+4",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch13+-+Page+5",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch13+-+Page+6",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch13+-+Page+7",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch13+-+Page+8"
+    ]
+   },
+   {
+    "num": 14,
+    "title": "Musuh yang Nyata",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch14+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch14+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch14+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch14+-+Page+4",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch14+-+Page+5"
+    ]
+   },
+   {
+    "num": 15,
+    "title": "Titik Balik",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch15+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch15+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch15+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch15+-+Page+4",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch15+-+Page+5",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch15+-+Page+6",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch15+-+Page+7",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch15+-+Page+8"
+    ]
+   },
+   {
+    "num": 16,
+    "title": "Nama yang Diingat",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch16+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch16+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch16+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch16+-+Page+4",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch16+-+Page+5",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch16+-+Page+6",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch16+-+Page+7",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch16+-+Page+8"
+    ]
+   },
+   {
+    "num": 17,
+    "title": "Sangat Dekat",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch17+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch17+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch17+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch17+-+Page+4",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch17+-+Page+5",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch17+-+Page+6",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch17+-+Page+7",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch17+-+Page+8"
+    ]
+   },
+   {
+    "num": 18,
+    "title": "Ledakan",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch18+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch18+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch18+-+Page+3"
+    ]
+   },
+   {
+    "num": 19,
+    "title": "Perjanjian",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch19+-+Page+1",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch19+-+Page+2",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch19+-+Page+3",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch19+-+Page+4",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch19+-+Page+5",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch19+-+Page+6",
+     "https://placehold.co/800x1200/22223b/c9ada7?text=Ch19+-+Page+7"
     ]
    }
   ]
@@ -111,11 +1058,351 @@
   "chapters": [
    {
     "num": 1,
-    "title": "Romance Dawn",
+    "title": "Awal Perjalanan",
     "pages": [
-     "https://placehold.co/800x1200/8b0000/ffffff?text=Ch1+-+Page+1",
-     "https://placehold.co/800x1200/a01010/ffffff?text=Ch1+-+Page+2",
-     "https://placehold.co/800x1200/8b0000/ffffff?text=Ch1+-+Page+3"
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch1+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch1+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch1+-+Page+4"
+    ]
+   },
+   {
+    "num": 2,
+    "title": "Bayangan Muncul",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch2+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch2+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch2+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch2+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch2+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch2+-+Page+6",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch2+-+Page+7"
+    ]
+   },
+   {
+    "num": 3,
+    "title": "Duel Pertama",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch3+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch3+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch3+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch3+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch3+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch3+-+Page+6",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch3+-+Page+7",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch3+-+Page+8"
+    ]
+   },
+   {
+    "num": 4,
+    "title": "Rahasia Terbongkar",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch4+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch4+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch4+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch4+-+Page+4"
+    ]
+   },
+   {
+    "num": 5,
+    "title": "Kekuatan Baru",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch5+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch5+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch5+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch5+-+Page+4"
+    ]
+   },
+   {
+    "num": 6,
+    "title": "Sekutu Tak Terduga",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch6+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch6+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch6+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch6+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch6+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch6+-+Page+6"
+    ]
+   },
+   {
+    "num": 7,
+    "title": "Pertarungan Sengit",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch7+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch7+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch7+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch7+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch7+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch7+-+Page+6"
+    ]
+   },
+   {
+    "num": 8,
+    "title": "Tangga Menuju Atas",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch8+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch8+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch8+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch8+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch8+-+Page+5"
+    ]
+   },
+   {
+    "num": 9,
+    "title": "Sisi Gelap",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch9+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch9+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch9+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch9+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch9+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch9+-+Page+6",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch9+-+Page+7",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch9+-+Page+8"
+    ]
+   },
+   {
+    "num": 10,
+    "title": "Keputusan Berani",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch10+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch10+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch10+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch10+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch10+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch10+-+Page+6",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch10+-+Page+7",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch10+-+Page+8"
+    ]
+   },
+   {
+    "num": 11,
+    "title": "Sinyal Bahaya",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch11+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch11+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch11+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch11+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch11+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch11+-+Page+6",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch11+-+Page+7"
+    ]
+   },
+   {
+    "num": 12,
+    "title": "Semangat Membara",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch12+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch12+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch12+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch12+-+Page+4"
+    ]
+   },
+   {
+    "num": 13,
+    "title": "Luka dan Harapan",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch13+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch13+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch13+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch13+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch13+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch13+-+Page+6",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch13+-+Page+7",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch13+-+Page+8"
+    ]
+   },
+   {
+    "num": 14,
+    "title": "Musuh yang Nyata",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch14+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch14+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch14+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch14+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch14+-+Page+5"
+    ]
+   },
+   {
+    "num": 15,
+    "title": "Titik Balik",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch15+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch15+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch15+-+Page+3"
+    ]
+   },
+   {
+    "num": 16,
+    "title": "Nama yang Diingat",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch16+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch16+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch16+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch16+-+Page+4"
+    ]
+   },
+   {
+    "num": 17,
+    "title": "Sangat Dekat",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch17+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch17+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch17+-+Page+3"
+    ]
+   },
+   {
+    "num": 18,
+    "title": "Ledakan",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch18+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch18+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch18+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch18+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch18+-+Page+5"
+    ]
+   },
+   {
+    "num": 19,
+    "title": "Perjanjian",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch19+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch19+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch19+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch19+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch19+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch19+-+Page+6"
+    ]
+   },
+   {
+    "num": 20,
+    "title": "Fajar Baru",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch20+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch20+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch20+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch20+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch20+-+Page+5"
+    ]
+   },
+   {
+    "num": 21,
+    "title": "Pemberontakan",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch21+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch21+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch21+-+Page+3"
+    ]
+   },
+   {
+    "num": 22,
+    "title": "Batas Kemampuan",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch22+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch22+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch22+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch22+-+Page+4"
+    ]
+   },
+   {
+    "num": 23,
+    "title": "Kebenaran",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch23+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch23+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch23+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch23+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch23+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch23+-+Page+6",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch23+-+Page+7"
+    ]
+   },
+   {
+    "num": 24,
+    "title": "Yang Tertinggal",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch24+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch24+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch24+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch24+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch24+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch24+-+Page+6",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch24+-+Page+7",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch24+-+Page+8"
+    ]
+   },
+   {
+    "num": 25,
+    "title": "Gerbang Terakhir",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch25+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch25+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch25+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch25+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch25+-+Page+5"
+    ]
+   },
+   {
+    "num": 26,
+    "title": "Dunia Lain",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch26+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch26+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch26+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch26+-+Page+4"
+    ]
+   },
+   {
+    "num": 27,
+    "title": "Warisan",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch27+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch27+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch27+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch27+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch27+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch27+-+Page+6",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch27+-+Page+7",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch27+-+Page+8"
+    ]
+   },
+   {
+    "num": 28,
+    "title": "Garis Depan",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch28+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch28+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch28+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch28+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch28+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch28+-+Page+6"
+    ]
+   },
+   {
+    "num": 29,
+    "title": "Hari Penentuan",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch29+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch29+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch29+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch29+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch29+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch29+-+Page+6"
+    ]
+   },
+   {
+    "num": 30,
+    "title": "Epilog Sementara",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch30+-+Page+1",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch30+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch30+-+Page+3",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch30+-+Page+4",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch30+-+Page+5",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch30+-+Page+6",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch30+-+Page+7",
+     "https://placehold.co/800x1200/8b0000/ffd700?text=Ch30+-+Page+8"
     ]
    }
   ]
@@ -134,10 +1421,275 @@
   "chapters": [
    {
     "num": 1,
-    "title": "Headon",
+    "title": "Awal Perjalanan",
     "pages": [
-     "https://placehold.co/800x1200/1b4332/ffffff?text=Ch1+-+Page+1",
-     "https://placehold.co/800x1200/22543d/ffffff?text=Ch1+-+Page+2"
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch1+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch1+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch1+-+Page+4"
+    ]
+   },
+   {
+    "num": 2,
+    "title": "Bayangan Muncul",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch2+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch2+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch2+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch2+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch2+-+Page+5"
+    ]
+   },
+   {
+    "num": 3,
+    "title": "Duel Pertama",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch3+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch3+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch3+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch3+-+Page+4"
+    ]
+   },
+   {
+    "num": 4,
+    "title": "Rahasia Terbongkar",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch4+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch4+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch4+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch4+-+Page+4"
+    ]
+   },
+   {
+    "num": 5,
+    "title": "Kekuatan Baru",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch5+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch5+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch5+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch5+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch5+-+Page+5",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch5+-+Page+6",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch5+-+Page+7",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch5+-+Page+8"
+    ]
+   },
+   {
+    "num": 6,
+    "title": "Sekutu Tak Terduga",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch6+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch6+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch6+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch6+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch6+-+Page+5",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch6+-+Page+6",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch6+-+Page+7"
+    ]
+   },
+   {
+    "num": 7,
+    "title": "Pertarungan Sengit",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch7+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch7+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch7+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch7+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch7+-+Page+5",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch7+-+Page+6",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch7+-+Page+7"
+    ]
+   },
+   {
+    "num": 8,
+    "title": "Tangga Menuju Atas",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch8+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch8+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch8+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch8+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch8+-+Page+5"
+    ]
+   },
+   {
+    "num": 9,
+    "title": "Sisi Gelap",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch9+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch9+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch9+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch9+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch9+-+Page+5",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch9+-+Page+6",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch9+-+Page+7",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch9+-+Page+8"
+    ]
+   },
+   {
+    "num": 10,
+    "title": "Keputusan Berani",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch10+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch10+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch10+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch10+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch10+-+Page+5",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch10+-+Page+6",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch10+-+Page+7"
+    ]
+   },
+   {
+    "num": 11,
+    "title": "Sinyal Bahaya",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch11+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch11+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch11+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch11+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch11+-+Page+5",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch11+-+Page+6"
+    ]
+   },
+   {
+    "num": 12,
+    "title": "Semangat Membara",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch12+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch12+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch12+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch12+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch12+-+Page+5",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch12+-+Page+6",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch12+-+Page+7"
+    ]
+   },
+   {
+    "num": 13,
+    "title": "Luka dan Harapan",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch13+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch13+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch13+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch13+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch13+-+Page+5",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch13+-+Page+6"
+    ]
+   },
+   {
+    "num": 14,
+    "title": "Musuh yang Nyata",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch14+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch14+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch14+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch14+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch14+-+Page+5"
+    ]
+   },
+   {
+    "num": 15,
+    "title": "Titik Balik",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch15+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch15+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch15+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch15+-+Page+4"
+    ]
+   },
+   {
+    "num": 16,
+    "title": "Nama yang Diingat",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch16+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch16+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch16+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch16+-+Page+4"
+    ]
+   },
+   {
+    "num": 17,
+    "title": "Sangat Dekat",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch17+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch17+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch17+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch17+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch17+-+Page+5",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch17+-+Page+6",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch17+-+Page+7"
+    ]
+   },
+   {
+    "num": 18,
+    "title": "Ledakan",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch18+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch18+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch18+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch18+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch18+-+Page+5",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch18+-+Page+6"
+    ]
+   },
+   {
+    "num": 19,
+    "title": "Perjanjian",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch19+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch19+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch19+-+Page+3"
+    ]
+   },
+   {
+    "num": 20,
+    "title": "Fajar Baru",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch20+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch20+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch20+-+Page+3"
+    ]
+   },
+   {
+    "num": 21,
+    "title": "Pemberontakan",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch21+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch21+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch21+-+Page+3"
+    ]
+   },
+   {
+    "num": 22,
+    "title": "Batas Kemampuan",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch22+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch22+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch22+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch22+-+Page+4"
+    ]
+   },
+   {
+    "num": 23,
+    "title": "Kebenaran",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch23+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch23+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch23+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch23+-+Page+4",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch23+-+Page+5",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch23+-+Page+6",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch23+-+Page+7",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch23+-+Page+8"
+    ]
+   },
+   {
+    "num": 24,
+    "title": "Yang Tertinggal",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch24+-+Page+1",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch24+-+Page+2",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch24+-+Page+3",
+     "https://placehold.co/800x1200/1b4332/95d5b2?text=Ch24+-+Page+4"
     ]
    }
   ]
@@ -157,10 +1709,273 @@
   "chapters": [
    {
     "num": 1,
-    "title": "Normanni",
+    "title": "Awal Perjalanan",
     "pages": [
-     "https://placehold.co/800x1200/3d2c1e/ffffff?text=Ch1+-+Page+1",
-     "https://placehold.co/800x1200/4d3826/ffffff?text=Ch1+-+Page+2"
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch1+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch1+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch1+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch1+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch1+-+Page+6",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch1+-+Page+7"
+    ]
+   },
+   {
+    "num": 2,
+    "title": "Bayangan Muncul",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch2+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch2+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch2+-+Page+3"
+    ]
+   },
+   {
+    "num": 3,
+    "title": "Duel Pertama",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch3+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch3+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch3+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch3+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch3+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch3+-+Page+6"
+    ]
+   },
+   {
+    "num": 4,
+    "title": "Rahasia Terbongkar",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch4+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch4+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch4+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch4+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch4+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch4+-+Page+6"
+    ]
+   },
+   {
+    "num": 5,
+    "title": "Kekuatan Baru",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch5+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch5+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch5+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch5+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch5+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch5+-+Page+6",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch5+-+Page+7"
+    ]
+   },
+   {
+    "num": 6,
+    "title": "Sekutu Tak Terduga",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch6+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch6+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch6+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch6+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch6+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch6+-+Page+6"
+    ]
+   },
+   {
+    "num": 7,
+    "title": "Pertarungan Sengit",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch7+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch7+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch7+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch7+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch7+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch7+-+Page+6",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch7+-+Page+7"
+    ]
+   },
+   {
+    "num": 8,
+    "title": "Tangga Menuju Atas",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch8+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch8+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch8+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch8+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch8+-+Page+5"
+    ]
+   },
+   {
+    "num": 9,
+    "title": "Sisi Gelap",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch9+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch9+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch9+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch9+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch9+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch9+-+Page+6",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch9+-+Page+7"
+    ]
+   },
+   {
+    "num": 10,
+    "title": "Keputusan Berani",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch10+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch10+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch10+-+Page+3"
+    ]
+   },
+   {
+    "num": 11,
+    "title": "Sinyal Bahaya",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch11+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch11+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch11+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch11+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch11+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch11+-+Page+6",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch11+-+Page+7",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch11+-+Page+8"
+    ]
+   },
+   {
+    "num": 12,
+    "title": "Semangat Membara",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch12+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch12+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch12+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch12+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch12+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch12+-+Page+6",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch12+-+Page+7",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch12+-+Page+8"
+    ]
+   },
+   {
+    "num": 13,
+    "title": "Luka dan Harapan",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch13+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch13+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch13+-+Page+3"
+    ]
+   },
+   {
+    "num": 14,
+    "title": "Musuh yang Nyata",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch14+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch14+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch14+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch14+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch14+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch14+-+Page+6",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch14+-+Page+7",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch14+-+Page+8"
+    ]
+   },
+   {
+    "num": 15,
+    "title": "Titik Balik",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch15+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch15+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch15+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch15+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch15+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch15+-+Page+6",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch15+-+Page+7"
+    ]
+   },
+   {
+    "num": 16,
+    "title": "Nama yang Diingat",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch16+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch16+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch16+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch16+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch16+-+Page+5"
+    ]
+   },
+   {
+    "num": 17,
+    "title": "Sangat Dekat",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch17+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch17+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch17+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch17+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch17+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch17+-+Page+6",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch17+-+Page+7",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch17+-+Page+8"
+    ]
+   },
+   {
+    "num": 18,
+    "title": "Ledakan",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch18+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch18+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch18+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch18+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch18+-+Page+5"
+    ]
+   },
+   {
+    "num": 19,
+    "title": "Perjanjian",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch19+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch19+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch19+-+Page+3"
+    ]
+   },
+   {
+    "num": 20,
+    "title": "Fajar Baru",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch20+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch20+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch20+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch20+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch20+-+Page+5"
+    ]
+   },
+   {
+    "num": 21,
+    "title": "Pemberontakan",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch21+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch21+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch21+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch21+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch21+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch21+-+Page+6"
+    ]
+   },
+   {
+    "num": 22,
+    "title": "Batas Kemampuan",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch22+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch22+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch22+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch22+-+Page+4"
+    ]
+   },
+   {
+    "num": 23,
+    "title": "Kebenaran",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch23+-+Page+1",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch23+-+Page+2",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch23+-+Page+3",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch23+-+Page+4",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch23+-+Page+5",
+     "https://placehold.co/800x1200/3d2c1e/c8a97e?text=Ch23+-+Page+6"
     ]
    }
   ]

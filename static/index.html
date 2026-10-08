@@ -47,6 +47,10 @@ h2.section{margin:8px 0 16px;font-size:1.15rem}
 .tag{background:var(--card2);border:1px solid #2a2a44;font-size:.72rem;padding:4px 10px;border-radius:999px;color:var(--accent2)}
 .desc{color:#c5c5d6;font-size:.9rem;line-height:1.6;margin:10px 0 16px}
 .ch-list{margin-top:22px}
+.ch-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.ch-bar select{background:var(--card2);border:1px solid #2a2a44;color:var(--text);padding:9px 14px;border-radius:999px;font-size:.85rem;outline:none}
+.ch-bar .read{background:var(--accent);border:none;color:#fff;padding:9px 20px;border-radius:999px;cursor:pointer;font-weight:600;font-size:.85rem}
+.ch-scroll{max-height:420px;overflow-y:auto;padding-right:4px}
 .ch-item{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid #23233c;padding:13px 16px;border-radius:10px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
 .ch-item:hover{border-color:var(--accent)}
 /* reader */
@@ -88,6 +92,7 @@ footer{text-align:center;color:var(--muted);font-size:.78rem;padding:30px 0}
   <div id="reader-bar">
     <button class="xbtn" id="close-reader">✕</button>
     <div class="title" id="r-title"></div>
+    <span class="meta" id="r-pages"></span>
     <button class="nbtn" id="prev-ch">‹ Prev</button>
     <button class="nbtn" id="next-ch">Next ›</button>
   </div>
@@ -128,13 +133,22 @@ async function openDetail(id){
       <img src="${c.cover}">
       <div class="detail-info">
         <h1>${c.title}</h1>
-        <div class="meta">✍ ${c.author} · 📡 ${c.status}</div>
+        <div class="meta">✍ ${c.author} · 📡 ${c.status} · 📖 ${c.chapters.length} chapter</div>
         <div class="tags">${c.genre.map(g=>`<span class="tag">${g}</span>`).join("")}</div>
         <p class="desc">${c.desc}</p>
       </div>
     </div>
-    <div class="ch-list"><h2 class="section">Daftar Chapter</h2>
-    ${c.chapters.map(ch=>`<div class="ch-item" onclick="openReader('${c.id}',${ch.num})"><span>Ch. ${ch.num}</span><span class="meta">${ch.title}</span></div>`).join("")}
+    <div class="ch-list"><h2 class="section">Daftar Chapter (${c.chapters.length})</h2>
+    <div class="ch-bar">
+      <button class="read" onclick="openReader('${c.id}',${c.chapters[0].num})">▶ Baca Ch. 1</button>
+      <select id="ch-jump" onchange="openReader('${c.id}',parseInt(this.value))">
+        <option value="">⬇ Lompat ke chapter...</option>
+        ${c.chapters.map(ch=>`<option value="${ch.num}">Ch. ${ch.num}: ${ch.title}</option>`).join("")}
+      </select>
+    </div>
+    <div class="ch-scroll">
+    ${c.chapters.slice().reverse().map(ch=>`<div class="ch-item" onclick="openReader('${c.id}',${ch.num})"><span>Ch. ${ch.num}</span><span class="meta">${ch.title}</span></div>`).join("")}
+    </div>
     </div>`;
   window.scrollTo(0,0);
 }
@@ -145,6 +159,7 @@ async function openReader(cid,num){
   CUR=c;const ch=c.chapters.find(x=>x.num===num)||c.chapters[0];CURC=ch.num;
   $("#r-title").textContent=`${c.title} — Ch. ${ch.num}: ${ch.title}`;
   $("#pages").innerHTML=ch.pages.map(p=>`<img src="${p}" loading="lazy">`).join("");
+  $("#r-pages").textContent=ch.pages.length+" hal";
   $("#reader").style.display="block";document.body.style.overflow="hidden";
   $("#reader").scrollTop=0;
   $("#prev-ch").disabled=CURC===c.chapters[0].num;
@@ -153,6 +168,12 @@ async function openReader(cid,num){
 $("#prev-ch").onclick=()=>openReader(CUR.id,CURC-1);
 $("#next-ch").onclick=()=>openReader(CUR.id,CURC+1);
 $("#close-reader").onclick=()=>{$("#reader").style.display="none";document.body.style.overflow="";};
+document.addEventListener("keydown",e=>{
+  if($("#reader").style.display!=="block")return;
+  if(e.key==="ArrowLeft"&&!$("#prev-ch").disabled)openReader(CUR.id,CURC-1);
+  if(e.key==="ArrowRight"&&!$("#next-ch").disabled)openReader(CUR.id,CURC+1);
+  if(e.key==="Escape")$("#close-reader").click();
+});
 $("#search").oninput=e=>{q=e.target.value.toLowerCase().trim();render();};
 document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));t.classList.add("active");filter=t.dataset.f;render();});
 document.querySelectorAll(".chip").forEach(t=>t.onclick=()=>{document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));t.classList.add("active");statusFilter=t.dataset.s;render();});
