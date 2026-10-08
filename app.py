@@ -40,10 +40,12 @@ def parse_manga(m, cover_art=None):
                   if r["type"] == "cover_art" and r.get("attributes")), None)
     cover = (f"https://uploads.mangadex.org/covers/{m['id']}/{fname}.256.jpg"
              if fname else "")
-    title = (m["attributes"].get("title", {}).get("en")
-             or next(iter(m["attributes"].get("title", {}).values()), "Untitled"))
-    desc = m["attributes"].get("description", {}).get("en") or ""
-    tags = [t["attributes"]["name"].get("en", "") for t in m["attributes"].get("tags", [])]
+    titles = m["attributes"].get("title", {}) or {}
+    title = titles.get("id") or titles.get("en") or next(iter(titles.values()), "Untitled")
+    descs = m["attributes"].get("description", {}) or {}
+    desc = descs.get("id") or descs.get("en") or ""
+    tags = [t["attributes"]["name"].get("id") or t["attributes"]["name"].get("en", "")
+            for t in m["attributes"].get("tags", [])]
     author = next((r["attributes"]["name"] for r in rels
                    if r["type"] == "author" and r.get("attributes")
                    and r["attributes"].get("name")), "-")
@@ -71,12 +73,18 @@ def api_manga():
 def api_manga_detail(mid):
     data = md_get(f"/manga/{mid}", {"includes[]": ["cover_art", "author"]})
     info = parse_manga(data["data"], None)
-    # chapters
-    ch = md_get("/manga/%s/feed" % mid, {
-        "translatedLanguage[]": ["en"], "limit": 100, "order[chapter]": "desc",
-        "contentRating[]": ["safe", "suggestive"],
-        "includeExternalUrl": 0,
-    })
+    # chapters: prefer Indonesian, fallback to English
+    def get_feed(lang):
+        return md_get("/manga/%s/feed" % mid, {
+            "translatedLanguage[]": [lang], "limit": 100, "order[chapter]": "desc",
+            "contentRating[]": ["safe", "suggestive"],
+            "includeExternalUrl": 0,
+        })
+    ch = get_feed("id")
+    lang_used = "id"
+    if not ch.get("data"):
+        ch = get_feed("en")
+        lang_used = "en"
     chapters = []
     for c in ch.get("data", []):
         a = c["attributes"]
@@ -87,6 +95,7 @@ def api_manga_detail(mid):
             "title": a.get("title") or "Chapter " + str(a.get("chapter") or ""),
             "pages_count": a.get("pages", 0),
         })
+    info["chapter_lang"] = lang_used
     info["chapters"] = chapters
     return jsonify(info)
 

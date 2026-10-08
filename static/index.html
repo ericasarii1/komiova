@@ -134,7 +134,7 @@ async function openDetail(id){
         <img src="${c.cover}">
         <div class="detail-info">
           <h1>${esc(c.title)}</h1>
-          <div class="meta">✍ ${esc(c.author)} · 📡 ${esc(c.status)} · 📖 ${CHAP.length} chapter (EN)</div>
+          <div class="meta">✍ ${esc(c.author)} · 📡 ${esc(c.status)} · 📖 ${CHAP.length} chapter (${(c.chapter_lang||"en").toUpperCase()})</div>
           <div class="tags">${(c.tags||[]).slice(0,6).map(g=>`<span class="tag">${esc(g)}</span>`).join("")}</div>
           <p class="desc">${esc(c.desc)}</p>
         </div>
@@ -149,7 +149,7 @@ async function openDetail(id){
       </div>
       <div class="ch-scroll">
       ${CHAP.map((ch,i)=>`<div class="ch-item" onclick="openReader(${i})"><span class="nm">Ch. ${esc(ch.num)} — ${esc(ch.title)}</span><span class="meta">${ch.pages_count} hal</span></div>`).join("")}
-      </div>`:'<div class="loading">Belum ada chapter bahasa Inggris 😌</div>'}
+      </div>`:'<div class="loading">Belum ada chapter yang tersedia 😌</div>'}
       </div>`;
   }catch(e){d.innerHTML='<button class="back" onclick="goHome()">← Kembali</button><div class="loading">Gagal memuat detail</div>';}
 }
