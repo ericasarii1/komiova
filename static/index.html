@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KomiOva — Baca Komik</title>
+<link rel="manifest" href="/static/manifest.json">
+<link rel="icon" type="image/png" href="/static/icon-192.png">
+<link rel="apple-touch-icon" href="/static/icon-192.png">
+<meta name="theme-color" content="#0e0e1a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>
 :root{--bg:#0e0e1a;--card:#1a1a2e;--card2:#16162a;--accent:#ff6b35;--accent2:#ffd369;--text:#eaeaf2;--muted:#8a8aa3;--radius:14px}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -183,6 +189,25 @@ document.addEventListener("keydown",e=>{
 let tmr; $("#search").oninput=e=>{clearTimeout(tmr);const v=e.target.value.trim();tmr=setTimeout(()=>{q=v;load();},500);};
 document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));t.classList.add("active");filter=t.dataset.f;render();});
 load();
+
+// PWA service worker
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("/static/sw.js").catch(()=>{}));
+}
+
+// Install prompt (Android Chrome)
+let deferredPrompt = null;
+const installBtn = document.createElement("button");
+installBtn.textContent = "📲 Install App";
+installBtn.style.cssText = "position:fixed;bottom:16px;right:16px;z-index:60;background:var(--accent);border:none;color:#fff;padding:12px 20px;border-radius:999px;font-weight:700;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.5);display:none";
+document.body.appendChild(installBtn);
+window.addEventListener("beforeinstallprompt", e => {
+  e.preventDefault(); deferredPrompt = e; installBtn.style.display = "block";
+});
+installBtn.onclick = async () => {
+  if (deferredPrompt) { deferredPrompt.prompt(); await deferredPrompt.userChoice; deferredPrompt = null; installBtn.style.display = "none"; }
+};
+window.addEventListener("appinstalled", () => installBtn.style.display = "none");
 </script>
 </body>
 </html>
