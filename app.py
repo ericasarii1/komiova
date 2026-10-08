@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request, send_from_directory, Response
 import json, os, urllib.request, urllib.parse
+from concurrent.futures import ThreadPoolExecutor
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__, static_folder="static")
@@ -14,6 +15,24 @@ def md_get(path, params=None):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
     with urllib.request.urlopen(req, timeout=20) as r:
         return json.load(r)
+
+_READABLE = {}
+
+def readable_chapters(mid):
+    """True if the manga has at least one internal (viewable) id/en chapter."""
+    if mid in _READABLE:
+        return _READABLE[mid]
+    try:
+        ch = md_get("/manga/%s/feed" % mid, {
+            "translatedLanguage[]": ["id", "en"], "limit": 1,
+            "order[chapter]": "asc", "includeExternalUrl": 0,
+        })
+        ok = ch.get("total", 0) > 0
+    except Exception:
+        ok = False
+    _READABLE[mid] = ok
+    return ok
+
 
 def img_proxy(url):
     return "/api/image?u=" + urllib.parse.quote(url, safe="")
@@ -60,16 +79,19 @@ def parse_manga(m, cover_art=None):
 def api_manga():
     q = request.args.get("q", "")
     base = {
-        "limit": 24, "contentRating[]": ["safe", "suggestive"],
+        "limit": 60, "contentRating[]": ["safe", "suggestive"],
         "includes[]": ["cover_art", "author"],
         "hasAvailableChapters": "true",
-        "availableTranslatedLanguage[]": ["id", "en"],
     }
     params = {**base, "order[relevance]" if q else "order[followedCount]": "desc"}
     if q:
         params["title"] = q
     data = md_get("/manga", params)
-    return jsonify([parse_manga(m, None) for m in data.get("data", [])])
+    candidates = data.get("data", [])
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        flags = list(ex.map(lambda m: readable_chapters(m["id"]), candidates))
+    readable = [m for m, ok in zip(candidates, flags) if ok][:24]
+    return jsonify([parse_manga(m, None) for m in readable])
 
 @app.route("/api/manga/<mid>")
 def api_manga_detail(mid):
