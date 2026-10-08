@@ -22,7 +22,11 @@ main{max-width:1100px;margin:0 auto;padding:24px 18px 80px}
 .comic:hover{transform:translateY(-4px)}
 .cover-wrap{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4;background:var(--card)}
 .cover-wrap img{width:100%;height:100%;object-fit:cover;display:block}
-.badge{position:absolute;top:8px;left:8px;background:var(--accent);color:#fff;font-size:.68rem;font-weight:700;padding:3px 8px;border-radius:6px}
+.badge{position:absolute;top:8px;left:8px;color:#fff;font-size:.68rem;font-weight:700;padding:3px 8px;border-radius:6px;background:#5a5a7a}
+.badge.Ongoing{background:#2e9e6b}.badge.Completed{background:#3a7bd5}.badge.Hiatus{background:#c9962e}.badge.Cancelled{background:#b3453f}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+.chip{background:var(--card2);border:1px solid #2a2a44;color:var(--muted);padding:6px 14px;border-radius:999px;cursor:pointer;font-size:.8rem}
+.chip.active{background:var(--card);border-color:var(--accent);color:var(--accent2)}
 .fav{position:absolute;top:6px;right:6px;background:rgba(0,0,0,.55);border:none;color:#fff;font-size:1.05rem;width:32px;height:32px;border-radius:50%;cursor:pointer;transition:transform .15s}
 .fav:hover{transform:scale(1.15)}
 .fav.on{color:var(--accent2)}
@@ -69,6 +73,12 @@ footer{text-align:center;color:var(--muted);font-size:.78rem;padding:30px 0}
 <main>
   <div id="home">
     <h2 class="section" id="sec-title">Daftar Komik</h2>
+    <div class="chips" id="chips">
+      <span class="chip active" data-s="all">Semua Status</span>
+      <span class="chip" data-s="Ongoing">Ongoing</span>
+      <span class="chip" data-s="Completed">Completed</span>
+      <span class="chip" data-s="Hiatus">Hiatus</span>
+    </div>
     <div class="grid" id="grid"></div>
     <div class="empty" id="empty" style="display:none">Nggak ada komik yang cocok 😅</div>
   </div>
@@ -85,7 +95,7 @@ footer{text-align:center;color:var(--muted);font-size:.78rem;padding:30px 0}
 </div>
 <footer>KomiOva · baca komik enak, gratis ✌️</footer>
 <script>
-let COMICS=[],FAVS=JSON.parse(localStorage.getItem("komiova_favs")||"[]"),filter="all",q="";
+let COMICS=[],FAVS=JSON.parse(localStorage.getItem("komiova_favs")||"[]"),filter="all",q="",statusFilter="all";
 const $=s=>document.querySelector(s);
 async function load(){
   COMICS=await (await fetch("/api/comics")).json();
@@ -94,13 +104,14 @@ async function load(){
 function render(){
   let list=COMICS;
   if(filter==="fav")list=list.filter(c=>FAVS.includes(c.id));
+  if(statusFilter!=="all")list=list.filter(c=>c.status===statusFilter);
   if(q)list=list.filter(c=>c.title.toLowerCase().includes(q)||c.genre.some(g=>g.toLowerCase().includes(q)));
   $("#sec-title").textContent=filter==="fav"?"Komik Favorit":"Daftar Komik";
   $("#grid").innerHTML=list.map(c=>`
     <div class="comic" onclick="openDetail('${c.id}')">
       <div class="cover-wrap">
         <img src="${c.cover}" alt="${c.title}" loading="lazy">
-        <span class="badge">${c.status}</span>
+        <span class="badge ${c.status}">${c.status}</span>
         <button class="fav ${FAVS.includes(c.id)?"on":""}" onclick="toggleFav(event,'${c.id}')">${FAVS.includes(c.id)?"★":"☆"}</button>
       </div>
       <h3>${c.title}</h3><p>${c.author}</p>
@@ -144,6 +155,7 @@ $("#next-ch").onclick=()=>openReader(CUR.id,CURC+1);
 $("#close-reader").onclick=()=>{$("#reader").style.display="none";document.body.style.overflow="";};
 $("#search").oninput=e=>{q=e.target.value.toLowerCase().trim();render();};
 document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));t.classList.add("active");filter=t.dataset.f;render();});
+document.querySelectorAll(".chip").forEach(t=>t.onclick=()=>{document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));t.classList.add("active");statusFilter=t.dataset.s;render();});
 load();
 </script>
 </body>

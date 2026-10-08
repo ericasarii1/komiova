@@ -7,7 +7,7 @@
    "Action",
    "Fantasy"
   ],
-  "status": "Ongoing",
+  "status": "Completed",
   "cover": "https://placehold.co/300x400/1a1a2e/ff6b35?text=Solo+Leveling",
   "desc": "Sung Jin-Woo, hunter terlemah, mendapat sistem yang memungkinkannya naik level tanpa batas.",
   "chapters": [
@@ -83,7 +83,7 @@
    "Action",
    "Fantasy"
   ],
-  "status": "Ongoing",
+  "status": "Hiatus",
   "cover": "https://placehold.co/300x400/22223b/c9ada7?text=Omniscient",
   "desc": "Kim Dokja satu-satunya pembaca novel web yang tahu akhir dunia.",
   "chapters": [
@@ -116,6 +116,51 @@
      "https://placehold.co/800x1200/8b0000/ffffff?text=Ch1+-+Page+1",
      "https://placehold.co/800x1200/a01010/ffffff?text=Ch1+-+Page+2",
      "https://placehold.co/800x1200/8b0000/ffffff?text=Ch1+-+Page+3"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "tower-of-god",
+  "title": "Tower of God",
+  "author": "SIU",
+  "genre": [
+   "Adventure",
+   "Fantasy"
+  ],
+  "status": "Ongoing",
+  "cover": "https://placehold.co/300x400/1b4332/95d5b2?text=Tower+of+God",
+  "desc": "Bam menaiki menara misterius untuk menemukan Rachel dan takdirnya.",
+  "chapters": [
+   {
+    "num": 1,
+    "title": "Headon",
+    "pages": [
+     "https://placehold.co/800x1200/1b4332/ffffff?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/22543d/ffffff?text=Ch1+-+Page+2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "vinland-saga",
+  "title": "Vinland Saga",
+  "author": "Makoto Yukimura",
+  "genre": [
+   "Action",
+   "Historical",
+   "Drama"
+  ],
+  "status": "Completed",
+  "cover": "https://placehold.co/300x400/3d2c1e/c8a97e?text=Vinland+Saga",
+  "desc": "Thorfinn, pendekar Viking, mencari tanah damai bernama Vinland.",
+  "chapters": [
+   {
+    "num": 1,
+    "title": "Normanni",
+    "pages": [
+     "https://placehold.co/800x1200/3d2c1e/ffffff?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/4d3826/ffffff?text=Ch1+-+Page+2"
     ]
    }
   ]
