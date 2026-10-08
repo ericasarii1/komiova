@@ -1,0 +1,123 @@
+[
+ {
+  "id": "solo-leveling",
+  "title": "Solo Leveling",
+  "author": "Chugong",
+  "genre": [
+   "Action",
+   "Fantasy"
+  ],
+  "status": "Ongoing",
+  "cover": "https://placehold.co/300x400/1a1a2e/ff6b35?text=Solo+Leveling",
+  "desc": "Sung Jin-Woo, hunter terlemah, mendapat sistem yang memungkinkannya naik level tanpa batas.",
+  "chapters": [
+   {
+    "num": 1,
+    "title": "Double Dungeon",
+    "pages": [
+     "https://placehold.co/800x1200/141428/ffffff?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/1a1a3e/ffffff?text=Ch1+-+Page+2",
+     "https://placehold.co/800x1200/20204a/ffffff?text=Ch1+-+Page+3"
+    ]
+   },
+   {
+    "num": 2,
+    "title": "The System",
+    "pages": [
+     "https://placehold.co/800x1200/141428/ffffff?text=Ch2+-+Page+1",
+     "https://placehold.co/800x1200/1a1a3e/ffffff?text=Ch2+-+Page+2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "nano-machine",
+  "title": "Nano Machine",
+  "author": "Hanjoongwook",
+  "genre": [
+   "Action",
+   "Martial Arts"
+  ],
+  "status": "Ongoing",
+  "cover": "https://placehold.co/300x400/2d132c/e94560?text=Nano+Machine",
+  "desc": "Cheon Yeo-Woon mendapat nano machine dari masa depan yang mengubah takdirnya.",
+  "chapters": [
+   {
+    "num": 1,
+    "title": "Nano Machine",
+    "pages": [
+     "https://placehold.co/800x1200/2d132c/ffffff?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/3a1a3e/ffffff?text=Ch1+-+Page+2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "eleceed",
+  "title": "Eleceed",
+  "author": "Son Je-ho",
+  "genre": [
+   "Action",
+   "Comedy"
+  ],
+  "status": "Ongoing",
+  "cover": "https://placehold.co/300x400/0f3460/ffd369?text=Eleceed",
+  "desc": "Jiwoo, anak baik hati, bertemu Kayden, sosok kucing dengan kekuatan luar biasa.",
+  "chapters": [
+   {
+    "num": 1,
+    "title": "Awal Pertemuan",
+    "pages": [
+     "https://placehold.co/800x1200/0f3460/ffffff?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/144a80/ffffff?text=Ch1+-+Page+2",
+     "https://placehold.co/800x1200/0f3460/ffffff?text=Ch1+-+Page+3"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "omniscient",
+  "title": "Omniscient Reader's Viewpoint",
+  "author": "Sing Shong",
+  "genre": [
+   "Action",
+   "Fantasy"
+  ],
+  "status": "Ongoing",
+  "cover": "https://placehold.co/300x400/22223b/c9ada7?text=Omniscient",
+  "desc": "Kim Dokja satu-satunya pembaca novel web yang tahu akhir dunia.",
+  "chapters": [
+   {
+    "num": 1,
+    "title": "Prologue",
+    "pages": [
+     "https://placehold.co/800x1200/22223b/ffffff?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/2a2a4a/ffffff?text=Ch1+-+Page+2"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "onepiece",
+  "title": "One Piece",
+  "author": "Eiichiro Oda",
+  "genre": [
+   "Adventure",
+   "Shounen"
+  ],
+  "status": "Ongoing",
+  "cover": "https://placehold.co/300x400/8b0000/ffd700?text=One+Piece",
+  "desc": "Luffy dan kru Topi Jerami berlayar mencari harta legendaris One Piece.",
+  "chapters": [
+   {
+    "num": 1,
+    "title": "Romance Dawn",
+    "pages": [
+     "https://placehold.co/800x1200/8b0000/ffffff?text=Ch1+-+Page+1",
+     "https://placehold.co/800x1200/a01010/ffffff?text=Ch1+-+Page+2",
+     "https://placehold.co/800x1200/8b0000/ffffff?text=Ch1+-+Page+3"
+    ]
+   }
+  ]
+ }
+]
