@@ -22,24 +22,20 @@ main{max-width:1100px;margin:0 auto;padding:24px 18px 80px}
 .comic:hover{transform:translateY(-4px)}
 .cover-wrap{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4;background:var(--card)}
 .cover-wrap img{width:100%;height:100%;object-fit:cover;display:block}
-.badge{position:absolute;top:8px;left:8px;color:#fff;font-size:.68rem;font-weight:700;padding:3px 8px;border-radius:6px;background:#5a5a7a}
-.badge.Ongoing{background:#2e9e6b}.badge.Completed{background:#3a7bd5}.badge.Hiatus{background:#c9962e}.badge.Cancelled{background:#b3453f}
-.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
-.chip{background:var(--card2);border:1px solid #2a2a44;color:var(--muted);padding:6px 14px;border-radius:999px;cursor:pointer;font-size:.8rem}
-.chip.active{background:var(--card);border-color:var(--accent);color:var(--accent2)}
+.badge{position:absolute;bottom:8px;left:8px;color:#fff;font-size:.68rem;font-weight:700;padding:3px 8px;border-radius:6px;background:#5a5a7a}
+.badge.ongoing{background:#2e9e6b}.badge.completed{background:#3a7bd5}.badge.hiatus{background:#c9962e}.badge.cancelled{background:#b3453f}
 .fav{position:absolute;top:6px;right:6px;background:rgba(0,0,0,.55);border:none;color:#fff;font-size:1.05rem;width:32px;height:32px;border-radius:50%;cursor:pointer;transition:transform .15s}
 .fav:hover{transform:scale(1.15)}
 .fav.on{color:var(--accent2)}
-.comic h3{font-size:.92rem;margin-top:8px;line-height:1.3}
+.comic h3{font-size:.92rem;margin-top:8px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .comic p{font-size:.75rem;color:var(--muted);margin-top:2px}
 h2.section{margin:8px 0 16px;font-size:1.15rem}
-.empty{color:var(--muted);text-align:center;padding:60px 0}
-/* detail */
+.empty,.loading{color:var(--muted);text-align:center;padding:60px 0}
 #detail{display:none;max-width:800px;margin:0 auto}
 #detail .back{background:none;border:1px solid #2a2a44;color:var(--muted);padding:8px 18px;border-radius:999px;cursor:pointer;margin-bottom:16px;font-size:.9rem}
 #detail .back:hover{color:var(--text);border-color:var(--accent)}
 .detail-head{display:flex;gap:20px;flex-wrap:wrap}
-.detail-head img{width:210px;border-radius:var(--radius);aspect-ratio:3/4;object-fit:cover}
+.detail-head img{width:210px;border-radius:var(--radius);aspect-ratio:3/4;object-fit:cover;background:var(--card)}
 .detail-info{flex:1;min-width:220px}
 .detail-info h1{font-size:1.5rem;margin-bottom:6px}
 .meta{color:var(--muted);font-size:.85rem;margin-bottom:4px}
@@ -48,27 +44,27 @@ h2.section{margin:8px 0 16px;font-size:1.15rem}
 .desc{color:#c5c5d6;font-size:.9rem;line-height:1.6;margin:10px 0 16px}
 .ch-list{margin-top:22px}
 .ch-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
-.ch-bar select{background:var(--card2);border:1px solid #2a2a44;color:var(--text);padding:9px 14px;border-radius:999px;font-size:.85rem;outline:none}
+.ch-bar select{background:var(--card2);border:1px solid #2a2a44;color:var(--text);padding:9px 14px;border-radius:999px;font-size:.85rem;outline:none;max-width:100%}
 .ch-bar .read{background:var(--accent);border:none;color:#fff;padding:9px 20px;border-radius:999px;cursor:pointer;font-weight:600;font-size:.85rem}
-.ch-scroll{max-height:420px;overflow-y:auto;padding-right:4px}
-.ch-item{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid #23233c;padding:13px 16px;border-radius:10px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
+.ch-scroll{max-height:460px;overflow-y:auto;padding-right:4px}
+.ch-item{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--card);border:1px solid #23233c;padding:13px 16px;border-radius:10px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
 .ch-item:hover{border-color:var(--accent)}
-/* reader */
+.ch-item .nm{font-size:.9rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #reader{display:none;position:fixed;inset:0;background:#0a0a12;z-index:50;overflow-y:auto;padding-bottom:40px}
 #reader-bar{position:sticky;top:0;background:rgba(10,10,18,.95);backdrop-filter:blur(8px);display:flex;align-items:center;gap:10px;padding:10px 14px;z-index:5;border-bottom:1px solid #1e1e34}
 #reader-bar .title{flex:1;font-weight:600;font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.nbtn{background:var(--accent);border:none;color:#fff;padding:8px 16px;border-radius:999px;cursor:pointer;font-weight:600;font-size:.85rem}
+.nbtn{background:var(--accent);border:none;color:#fff;padding:8px 14px;border-radius:999px;cursor:pointer;font-weight:600;font-size:.82rem}
 .nbtn:disabled{background:#33334d;cursor:not-allowed}
 .xbtn{background:none;border:1px solid #2a2a44;color:#fff;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1.1rem}
-#pages img{display:block;max-width:720px;width:100%;margin:0 auto}
+#pages img{display:block;max-width:760px;width:100%;margin:0 auto;min-height:200px;background:#12121e}
 footer{text-align:center;color:var(--muted);font-size:.78rem;padding:30px 0}
-@media(max-width:600px){.grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}.detail-head img{width:150px}}
+@media(max-width:600px){.grid{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px}.detail-head img{width:150px}#reader-bar .title{font-size:.8rem}.nbtn{padding:7px 10px;font-size:.75rem}}
 </style>
 </head>
 <body>
 <header>
   <div class="logo">Komi<span>Ova</span></div>
-  <input id="search" placeholder="🔍 Cari judul atau genre...">
+  <input id="search" placeholder="🔍 Cari judul komik...">
   <div id="tabs">
     <button class="tab active" data-f="all">Semua</button>
     <button class="tab" data-f="fav">❤ Favorit</button>
@@ -76,15 +72,9 @@ footer{text-align:center;color:var(--muted);font-size:.78rem;padding:30px 0}
 </header>
 <main>
   <div id="home">
-    <h2 class="section" id="sec-title">Daftar Komik</h2>
-    <div class="chips" id="chips">
-      <span class="chip active" data-s="all">Semua Status</span>
-      <span class="chip" data-s="Ongoing">Ongoing</span>
-      <span class="chip" data-s="Completed">Completed</span>
-      <span class="chip" data-s="Hiatus">Hiatus</span>
-    </div>
+    <h2 class="section" id="sec-title">Komik Populer</h2>
     <div class="grid" id="grid"></div>
-    <div class="empty" id="empty" style="display:none">Nggak ada komik yang cocok 😅</div>
+    <div class="loading" id="status-msg">Memuat komik…</div>
   </div>
   <div id="detail"></div>
 </main>
@@ -98,85 +88,99 @@ footer{text-align:center;color:var(--muted);font-size:.78rem;padding:30px 0}
   </div>
   <div id="pages"></div>
 </div>
-<footer>KomiOva · baca komik enak, gratis ✌️</footer>
+<footer>KomiOva · data komik dari MangaDex · buat belajar 🎓</footer>
 <script>
-let COMICS=[],FAVS=JSON.parse(localStorage.getItem("komiova_favs")||"[]"),filter="all",q="",statusFilter="all";
+let COMICS=[],FAVS=JSON.parse(localStorage.getItem("komiova_favs")||"[]"),filter="all",q="";
+let CUR=null,CHAP=[],IDX=0;
 const $=s=>document.querySelector(s);
+const msg=t=>{$("#status-msg").textContent=t;$("#status-msg").style.display="block";};
+const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
 async function load(){
-  COMICS=await (await fetch("/api/comics")).json();
-  render();
+  msg("Memuat komik…");
+  try{
+    const r=await fetch("/api/manga"+(q?"?q="+encodeURIComponent(q):""));
+    COMICS=await r.json();
+    render();
+  }catch(e){msg("Gagal memuat 😅 coba refresh");}
 }
 function render(){
   let list=COMICS;
   if(filter==="fav")list=list.filter(c=>FAVS.includes(c.id));
-  if(statusFilter!=="all")list=list.filter(c=>c.status===statusFilter);
-  if(q)list=list.filter(c=>c.title.toLowerCase().includes(q)||c.genre.some(g=>g.toLowerCase().includes(q)));
-  $("#sec-title").textContent=filter==="fav"?"Komik Favorit":"Daftar Komik";
+  $("#sec-title").textContent=filter==="fav"?"Komik Favorit":(q?`Hasil: "${q}"`:"Komik Populer");
   $("#grid").innerHTML=list.map(c=>`
     <div class="comic" onclick="openDetail('${c.id}')">
       <div class="cover-wrap">
-        <img src="${c.cover}" alt="${c.title}" loading="lazy">
-        <span class="badge ${c.status}">${c.status}</span>
+        <img src="${c.cover}" alt="${esc(c.title)}" loading="lazy">
+        <span class="badge ${(c.status||"").toLowerCase()}">${esc(c.status)}</span>
         <button class="fav ${FAVS.includes(c.id)?"on":""}" onclick="toggleFav(event,'${c.id}')">${FAVS.includes(c.id)?"★":"☆"}</button>
       </div>
-      <h3>${c.title}</h3><p>${c.author}</p>
+      <h3>${esc(c.title)}</h3><p>${esc(c.author)}</p>
     </div>`).join("");
-  $("#empty").style.display=list.length?"none":"block";
+  $("#status-msg").textContent=list.length?"":"Nggak ada komik yang cocok 😅";
+  $("#status-msg").style.display=list.length?"none":"block";
 }
 function toggleFav(e,id){e.stopPropagation();FAVS=FAVS.includes(id)?FAVS.filter(x=>x!==id):[...FAVS,id];localStorage.setItem("komiova_favs",JSON.stringify(FAVS));render();}
+
 async function openDetail(id){
-  const c=await (await fetch("/api/comics/"+id)).json();
   $("#home").style.display="none";
-  const d=$("#detail");d.style.display="block";
-  d.innerHTML=`<button class="back" onclick="goHome()">← Kembali</button>
-    <div class="detail-head">
-      <img src="${c.cover}">
-      <div class="detail-info">
-        <h1>${c.title}</h1>
-        <div class="meta">✍ ${c.author} · 📡 ${c.status} · 📖 ${c.chapters.length} chapter</div>
-        <div class="tags">${c.genre.map(g=>`<span class="tag">${g}</span>`).join("")}</div>
-        <p class="desc">${c.desc}</p>
-      </div>
-    </div>
-    <div class="ch-list"><h2 class="section">Daftar Chapter (${c.chapters.length})</h2>
-    <div class="ch-bar">
-      <button class="read" onclick="openReader('${c.id}',${c.chapters[0].num})">▶ Baca Ch. 1</button>
-      <select id="ch-jump" onchange="openReader('${c.id}',parseInt(this.value))">
-        <option value="">⬇ Lompat ke chapter...</option>
-        ${c.chapters.map(ch=>`<option value="${ch.num}">Ch. ${ch.num}: ${ch.title}</option>`).join("")}
-      </select>
-    </div>
-    <div class="ch-scroll">
-    ${c.chapters.slice().reverse().map(ch=>`<div class="ch-item" onclick="openReader('${c.id}',${ch.num})"><span>Ch. ${ch.num}</span><span class="meta">${ch.title}</span></div>`).join("")}
-    </div>
-    </div>`;
+  const d=$("#detail");d.style.display="block";d.innerHTML='<div class="loading">Memuat detail…</div>';
   window.scrollTo(0,0);
+  try{
+    const c=await (await fetch("/api/manga/"+id)).json();
+    CUR=c;CHAP=c.chapters||[];
+    d.innerHTML=`<button class="back" onclick="goHome()">← Kembali</button>
+      <div class="detail-head">
+        <img src="${c.cover}">
+        <div class="detail-info">
+          <h1>${esc(c.title)}</h1>
+          <div class="meta">✍ ${esc(c.author)} · 📡 ${esc(c.status)} · 📖 ${CHAP.length} chapter (EN)</div>
+          <div class="tags">${(c.tags||[]).slice(0,6).map(g=>`<span class="tag">${esc(g)}</span>`).join("")}</div>
+          <p class="desc">${esc(c.desc)}</p>
+        </div>
+      </div>
+      <div class="ch-list"><h2 class="section">Daftar Chapter (${CHAP.length})</h2>
+      ${CHAP.length?`<div class="ch-bar">
+        <button class="read" onclick="openReader(0)">▶ Mulai dari Awal</button>
+        <select onchange="openReader(parseInt(this.value))">
+          <option value="">⬇ Lompat ke chapter…</option>
+          ${CHAP.map((ch,i)=>`<option value="${i}">Ch. ${esc(ch.num)} — ${esc(ch.title).slice(0,50)}</option>`).join("")}
+        </select>
+      </div>
+      <div class="ch-scroll">
+      ${CHAP.map((ch,i)=>`<div class="ch-item" onclick="openReader(${i})"><span class="nm">Ch. ${esc(ch.num)} — ${esc(ch.title)}</span><span class="meta">${ch.pages_count} hal</span></div>`).join("")}
+      </div>`:'<div class="loading">Belum ada chapter bahasa Inggris 😌</div>'}
+      </div>`;
+  }catch(e){d.innerHTML='<button class="back" onclick="goHome()">← Kembali</button><div class="loading">Gagal memuat detail</div>';}
 }
 function goHome(){$("#detail").style.display="none";$("#detail").innerHTML="";$("#home").style.display="block";}
-let CUR=null,CURC=null;
-async function openReader(cid,num){
-  const c=await (await fetch("/api/comics/"+cid)).json();
-  CUR=c;const ch=c.chapters.find(x=>x.num===num)||c.chapters[0];CURC=ch.num;
-  $("#r-title").textContent=`${c.title} — Ch. ${ch.num}: ${ch.title}`;
-  $("#pages").innerHTML=ch.pages.map(p=>`<img src="${p}" loading="lazy">`).join("");
-  $("#r-pages").textContent=ch.pages.length+" hal";
-  $("#reader").style.display="block";document.body.style.overflow="hidden";
-  $("#reader").scrollTop=0;
-  $("#prev-ch").disabled=CURC===c.chapters[0].num;
-  $("#next-ch").disabled=CURC===c.chapters[c.chapters.length-1].num;
+
+async function openReader(i){
+  if(!CHAP.length)return;
+  IDX=Math.max(0,Math.min(i,CHAP.length-1));
+  const ch=CHAP[IDX];
+  $("#r-title").textContent=`${CUR.title} — Ch. ${ch.num}`;
+  $("#r-pages").textContent="";
+  $("#pages").innerHTML='<div class="loading">Memuat halaman…</div>';
+  $("#reader").style.display="block";document.body.style.overflow="hidden";$("#reader").scrollTop=0;
+  $("#prev-ch").disabled=IDX<=0;$("#next-ch").disabled=IDX>=CHAP.length-1;
+  try{
+    const d=await (await fetch("/api/chapter/"+ch.id)).json();
+    $("#pages").innerHTML=(d.pages||[]).map(p=>`<img src="${p}" loading="lazy">`).join("")||'<div class="loading">Halaman kosong</div>';
+    $("#r-pages").textContent=(d.pages||[]).length+" hal";
+  }catch(e){$("#pages").innerHTML='<div class="loading">Gagal memuat halaman 😅</div>';}
 }
-$("#prev-ch").onclick=()=>openReader(CUR.id,CURC-1);
-$("#next-ch").onclick=()=>openReader(CUR.id,CURC+1);
+$("#prev-ch").onclick=()=>openReader(IDX-1);
+$("#next-ch").onclick=()=>openReader(IDX+1);
 $("#close-reader").onclick=()=>{$("#reader").style.display="none";document.body.style.overflow="";};
 document.addEventListener("keydown",e=>{
   if($("#reader").style.display!=="block")return;
-  if(e.key==="ArrowLeft"&&!$("#prev-ch").disabled)openReader(CUR.id,CURC-1);
-  if(e.key==="ArrowRight"&&!$("#next-ch").disabled)openReader(CUR.id,CURC+1);
+  if(e.key==="ArrowLeft"&&IDX>0)openReader(IDX-1);
+  if(e.key==="ArrowRight"&&IDX<CHAP.length-1)openReader(IDX+1);
   if(e.key==="Escape")$("#close-reader").click();
 });
-$("#search").oninput=e=>{q=e.target.value.toLowerCase().trim();render();};
+let tmr; $("#search").oninput=e=>{clearTimeout(tmr);const v=e.target.value.trim();tmr=setTimeout(()=>{q=v;load();},500);};
 document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));t.classList.add("active");filter=t.dataset.f;render();});
-document.querySelectorAll(".chip").forEach(t=>t.onclick=()=>{document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));t.classList.add("active");statusFilter=t.dataset.s;render();});
 load();
 </script>
 </body>
